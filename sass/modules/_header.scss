@@ -48,8 +48,16 @@ header{
             padding-left: 5px;
             background-color: black;
             border: none;
-            width: 180px;
             color: $primary-fcolor;
+            @include breakpoint($tablet){
+                width: 180px;
+            }
+            @include breakpoint($laptop){
+                width: 250px;
+            }
+            @include breakpoint($desktop){
+                width: 280px;
+            }
         }
     }
     .profile-nav{
