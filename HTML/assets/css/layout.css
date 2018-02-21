@@ -1,0 +1,27 @@
+body {
+	background-color: #181818;
+	color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+
+}
+.main-layout-container{width: 100%;margin: 0px;padding: 0px;}
+.top-ad-area{background-color: #fff;
+min-height: 84px;text-align: center;
+	padding-top: 10px;}
+	
+.navbar .navbar-nav .nav-item {font-size: 12px;font-style: normal; font-weight: 600;text-transform: uppercase;}	
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link{color:#e8c706 }
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{color:#e8c706 }
+
+.nav-item .nav-link .btn-search{background-color: #2e2e2e;padding: .1rem 1.2rem;}
+
+.media-category {padding: 20px 0px}
+.media-category .media-category-title ,
+.media-category .media-category-title a {color:#6d6d6d;font-size: 12px;font-style: normal; font-weight: 600;text-transform: uppercase; }
+
+.owl-theme .owl-nav {position: absolute;width: 100%; margin-top: 0px;top:0px}
+.owl-theme .owl-nav .owl-prev {float: left;}
+.owl-theme .owl-nav .owl-next {float: right;}
+.media-category  .owl-carousel .item a {color: #fff}
+
+footer { background-color:#141414;height: 200px;}

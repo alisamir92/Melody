@@ -1,0 +1,146 @@
+//susy configurations
+$susy: (
+  columns: 12,
+  gutters: 0.2,
+  //gutter-position: inside,
+  global-box-sizing: border-box,
+  //output: isolate
+);
+
+
+
+
+/*Start Adv. layout@@@@@@@@@@@@@@@@@@@@@@*/
+
+/*End Adv. layout@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+/*Start header layout  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+header{
+    
+    img{
+        @include breakpoint($tablet){
+    @include span(1 of 20);
+    }
+    }
+    .header-nav{
+        @include breakpoint($tablet){
+        @include span(6 at 2 of 20);
+        }
+        li{
+            @include breakpoint($tablet){
+            @include span(1 of 7);
+            }
+        }
+    }
+    .search-form{
+        @include breakpoint($tablet){
+        @include span(6 at 8 of 20);
+        }
+    }
+    .profile-nav{
+        @include breakpoint($tablet){
+        @include span(6 at 15 of 20);
+        }
+        
+        li{
+            @include breakpoint($tablet){
+            &:first-child{
+                @include span(1 of 4);
+            }
+            &:nth-child(2){
+                @include span(1 at 2 of 4);
+            }
+            &:nth-child(3){
+                @include span(1 at 3 of 4);
+            }
+            &:last-child{
+                @include span(1 at 4 of 4);
+            }
+        }
+        }
+    }
+}
+
+/*End header layout  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/*Start movies-lists layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+.movies-lists{
+    
+    ul{
+        li{
+            &:nth-of-type(1){
+                @include span(1 of 5);
+            }
+            &:nth-of-type(2){
+                @include span(1 at 2 of 5);
+            }
+            &:nth-of-type(3){
+                @include span(1 at 3 of 5);
+            }
+            &:nth-of-type(4){
+                @include span(1 at 4 of 5);
+            }
+            &:last-of-type{
+                @include span(1 at 5 of 5);
+            }
+        }
+    }
+}
+
+/*End movies-lists layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+/*Start archive-main layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+/*End archive-main layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+/*Start footer layout @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+.footer{
+    div{
+    @include container($main-width);
+    }
+}
+
+/*End footer layout @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

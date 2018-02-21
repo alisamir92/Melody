@@ -1,0 +1,266 @@
+/*
+Theme Name: zumra
+Theme URI: http://mohamadelbialy.com/zumra
+Description: Theme for zumrafood.com.
+Author: Mohamed Elbialy
+Author URI: http://mohamadelbialy.com
+*/
+/*Start Adv. layout@@@@@@@@@@@@@@@@@@@@@@*/
+/*End Adv. layout@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*Start header layout  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+@media (min-width: 768px) {
+  header img {
+    width: 4.2016806723%;
+    float: left;
+    margin-right: 0.8403361345%; } }
+
+@media (min-width: 768px) {
+  header .header-nav {
+    width: 29.4117647059%;
+    float: left;
+    margin-right: 0.8403361345%; } }
+
+@media (min-width: 768px) {
+  header .header-nav li {
+    width: 12.1951219512%;
+    float: left;
+    margin-right: 2.4390243902%; } }
+
+@media (min-width: 768px) {
+  header .search-form {
+    width: 29.4117647059%;
+    float: left;
+    margin-right: 0.8403361345%; } }
+
+@media (min-width: 768px) {
+  header .profile-nav {
+    width: 29.4117647059%;
+    float: right;
+    margin-right: 0; } }
+
+@media (min-width: 768px) {
+  header .profile-nav li:first-child {
+    width: 21.7391304348%;
+    float: left;
+    margin-right: 4.347826087%; }
+  header .profile-nav li:nth-child(2) {
+    width: 21.7391304348%;
+    float: left;
+    margin-right: 4.347826087%; }
+  header .profile-nav li:nth-child(3) {
+    width: 21.7391304348%;
+    float: left;
+    margin-right: 4.347826087%; }
+  header .profile-nav li:last-child {
+    width: 21.7391304348%;
+    float: right;
+    margin-right: 0; } }
+
+/*End header layout  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*Start movies-lists layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+.movies-lists ul li:nth-of-type(1) {
+  width: 17.2413793103%;
+  float: left;
+  margin-right: 3.4482758621%; }
+
+.movies-lists ul li:nth-of-type(2) {
+  width: 17.2413793103%;
+  float: left;
+  margin-right: 3.4482758621%; }
+
+.movies-lists ul li:nth-of-type(3) {
+  width: 17.2413793103%;
+  float: left;
+  margin-right: 3.4482758621%; }
+
+.movies-lists ul li:nth-of-type(4) {
+  width: 17.2413793103%;
+  float: left;
+  margin-right: 3.4482758621%; }
+
+.movies-lists ul li:last-of-type {
+  width: 17.2413793103%;
+  float: right;
+  margin-right: 0; }
+
+/*End movies-lists layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*Start archive-main layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*End archive-main layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*Start footer layout @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+.footer div {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto; }
+  .footer div:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+/*End footer layout @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*compass resets*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 2; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+* {
+  box-sizing: border-box; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+body {
+  background-color: #ececec;
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; }
+
+/*Start Adv. @@@@@@@@@@@@@@@@@@@@@@*/
+.adv {
+  text-align: center; }
+
+/*End Adv. @@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*Start header @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+header {
+  padding: 5px;
+  text-align: center;
+  color: #fff;
+  background-color: #000000; }
+  header a {
+    color: #fff; }
+    header a:hover {
+      color: #ead80c; }
+  @media (min-width: 768px) {
+    header {
+      height: 60px; } }
+  header img {
+    height: 100px;
+    width: 100px; }
+    @media (min-width: 768px) {
+      header img {
+        height: 50px;
+        width: 50px; } }
+  @media (min-width: 768px) {
+    header .header-nav {
+      margin-top: 15px;
+      font-size: 8px; } }
+  @media (min-width: 1000px) {
+    header .header-nav {
+      font-size: 10px; } }
+  @media (min-width: 768px) {
+    header .search-form {
+      text-align: left;
+      margin-top: 8px; } }
+  header .search-form input {
+    padding-left: 5px;
+    background-color: black;
+    border: none;
+    width: 180px;
+    color: #fff; }
+  header .profile-nav {
+    margin-top: 15px; }
+    @media (min-width: 768px) {
+      header .profile-nav {
+        font-size: 6px; } }
+    @media (min-width: 1000px) {
+      header .profile-nav {
+        font-size: 8px; } }
+
+/*End header  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+.movies-lists {
+  padding: 20px;
+  background-color: #181818;
+  color: #fff;
+  font-size: 7px; }
+  @media (min-width: 768px) {
+    .movies-lists {
+      height: 1050px;
+      font-size: 10px; } }
+  .movies-lists ul {
+    height: 100px;
+    margin: 10px; }
+    @media (min-width: 768px) {
+      .movies-lists ul {
+        height: 200px; } }
+    .movies-lists ul div {
+      color: grey; }
+    .movies-lists ul li img {
+      width: 60px;
+      height: 50px; }
+      @media (min-width: 768px) {
+        .movies-lists ul li img {
+          width: 140px;
+          height: 100px; } }
+      @media (min-width: 1000px) {
+        .movies-lists ul li img {
+          width: 190px;
+          height: auto; } }
+      @media (min-width: 1200px) {
+        .movies-lists ul li img {
+          width: 220px;
+          height: auto; } }
+
+.footer {
+  text-align: center;
+  padding: 50px;
+  color: #fff;
+  background-color: #000000; }
+  .footer a {
+    color: #fff; }
+
+/*# sourceMappingURL=style.css.map */

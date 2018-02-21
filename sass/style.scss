@@ -1,0 +1,23 @@
+/*
+Theme Name: zumra
+Theme URI: http://mohamadelbialy.com/zumra
+Description: Theme for zumrafood.com.
+Author: Mohamed Elbialy
+Author URI: http://mohamadelbialy.com
+*/
+
+// Import external files
+@import "susy";
+@import "breakpoint";
+@import "mixins/variables";
+$susy: (flow: ltr);
+@import "layout/layout";
+@import "base/resets";
+@import "base/base";
+
+@import "modules/header";
+@import "modules/movies-lists";
+    
+@import "modules/footer";
+
+

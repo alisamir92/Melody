@@ -1,0 +1,30 @@
+/*
+Theme Name: eatright
+Theme URI: http://mohamadelbialy.com/eatright
+Description: Theme for eatrightfood.com.
+Author: Mohamed Elbialy
+Author URI: http://mohamadelbialy.com
+*/
+
+// Import external files
+@import "susy";
+@import "breakpoint";
+@import "mixins/variables";
+
+$susy: (flow: rtl);
+@import "layout/layout";
+
+
+
+@import "base/resets";
+@import "base/base";
+
+@import "modules/header";
+
+
+
+
+@import "modules/footer";
+
+
+
