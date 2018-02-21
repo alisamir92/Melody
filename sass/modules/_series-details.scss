@@ -1,0 +1,163 @@
+.series-sort{
+    padding: 20px;
+    height: 60px;
+    color: $primary-fcolor;
+    background-color: $fifth-fcolor;
+    div{
+        text-align: center;
+        font-size: 8px;
+        @include breakpoint($tablet){
+            font-size: 10px;
+        }
+    }
+    select{
+        background-color: $sec-fcolor;
+        border: none;
+        padding: 5px;
+        font-size: 10px;
+        margin-right: 5px;
+        color: $primary-fcolor;
+        @include breakpoint($tablet){
+            width: 200px;
+        }
+    }
+}
+
+.series{
+    height: 1200px;
+    @include breakpoint($tablet){
+        height: 700px;
+    }
+    padding: 20px;
+    background-color: $sec-fcolor;
+    color: $primary-fcolor;
+        .ep{
+            
+        }
+        .series-details{
+            margin: 30px auto;
+            .title{
+                font-size: 20px;
+            }
+            h3{
+                font-size: 16px;
+            }
+            .description{
+                font-size: 11px;
+            }
+            span{
+                font-size: 11px;
+                color: grey;
+            }
+            .social-icons{
+                i{
+                    color: grey;
+                    
+                        border: solid 1px grey;
+                        border-radius: 50%;
+                        padding: 10px 15px;
+                    
+                    &:last-child{
+                        padding: 10px;
+                    }
+                }
+            }
+            
+            .series-team{
+                font-size: 15px;
+                @include breakpoint($tablet){
+                    font-size: 10px;
+                }
+                @include breakpoint($laptop){
+                    font-size: 11px;
+                }
+                
+                .cast{
+                    
+                    margin-bottom: 30px;
+                    
+                    
+                }
+                
+                .producers{
+                    margin-bottom: 30px;
+                    
+                }
+                .directors{
+                    
+                }
+                
+                
+        }
+        }
+        .series-adv{
+            
+        }
+    }
+
+.related-titles{
+    padding: 20px;
+    background-color: $fourth-fcolor;
+    color: $primary-fcolor;
+    font-size: 7px;
+    @include breakpoint($tablet){
+       
+        font-size: 10px;
+    }
+    
+    ul{
+        height: 100px;
+        margin: 10px;
+        @include breakpoint($tablet){
+                    height: 200px;
+                    
+                }
+        div{
+            color: grey;
+            margin-bottom: 5px;
+        }
+        li{
+            img{
+                width: 50px;
+                height: 50px;
+                @include breakpoint($tablet){
+                    width: 140px;
+                    height: 100px;
+                }
+                @include breakpoint($laptop){
+                    width: 190px;
+                    height: auto;
+                }
+                @include breakpoint($desktop){
+                    width: 220px;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

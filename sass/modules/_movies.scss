@@ -1,14 +1,25 @@
 .movie-sort{
+    padding: 20px;
     height: 60px;
     color: $primary-fcolor;
-    background-color: #323232;
+    background-color: $fifth-fcolor;
     div{
-        font-size: 10px;
+        text-align: center;
+        font-size: 8px;
+        @include breakpoint($tablet){
+            font-size: 10px;
+        }
     }
     select{
         background-color: $sec-fcolor;
         border: none;
+        padding: 5px;
+        font-size: 10px;
         margin-right: 5px;
         color: $primary-fcolor;
+        width: 40px;
+        @include breakpoint($tablet){
+            width: auto;
+        }
     }
 }

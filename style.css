@@ -57,7 +57,7 @@ Author URI: http://mohamadelbialy.com
     margin-right: 0; } }
 
 /*End header layout  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-/*Start movies-lists layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*Start home-page layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 .movies-lists ul li:nth-of-type(1) {
   width: 17.2413793103%;
   float: left;
@@ -78,30 +78,167 @@ Author URI: http://mohamadelbialy.com
   float: left;
   margin-right: 3.4482758621%; }
 
-.movies-lists ul li:last-of-type {
+.movies-lists ul li:nth-of-type(5) {
   width: 17.2413793103%;
   float: right;
   margin-right: 0; }
 
-/*End movies-lists layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*End home-page layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 /*Start movies layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-.movie-sort {
-  padding: 20px; }
-  .movie-sort div:first-child {
-    width: 31.4285714286%;
-    float: left;
-    margin-right: 2.8571428571%; }
-  .movie-sort div:last-child {
-    width: 48.5714285714%;
-    float: right;
-    margin-right: 0; }
-    @media (min-width: 768px) {
-      .movie-sort div:last-child {
-        width: 31.4285714286%;
-        float: right;
-        margin-right: 0; } }
+.movie-sort div:first-child {
+  width: 45.4545454545%;
+  float: left;
+  margin-right: 9.0909090909%; }
+  @media (min-width: 768px) {
+    .movie-sort div:first-child {
+      width: 29.4117647059%;
+      float: left;
+      margin-right: 5.8823529412%; } }
+  @media (min-width: 1000px) {
+    .movie-sort div:first-child {
+      width: 21.7391304348%;
+      float: left;
+      margin-right: 4.347826087%; } }
+
+.movie-sort div:last-child {
+  width: 45.4545454545%;
+  float: right;
+  margin-right: 0; }
+  @media (min-width: 768px) {
+    .movie-sort div:last-child {
+      width: 29.4117647059%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 1000px) {
+    .movie-sort div:last-child {
+      width: 21.7391304348%;
+      float: right;
+      margin-right: 0; } }
 
 /*End movies layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*Start series-details layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+.series-sort div:first-child {
+  width: 45.4545454545%;
+  float: left;
+  margin-right: 9.0909090909%; }
+  @media (min-width: 768px) {
+    .series-sort div:first-child {
+      width: 29.4117647059%;
+      float: left;
+      margin-right: 5.8823529412%; } }
+  @media (min-width: 1000px) {
+    .series-sort div:first-child {
+      width: 21.7391304348%;
+      float: left;
+      margin-right: 4.347826087%; } }
+
+.series-sort div:last-child {
+  width: 45.4545454545%;
+  float: right;
+  margin-right: 0; }
+  @media (min-width: 768px) {
+    .series-sort div:last-child {
+      width: 29.4117647059%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 1000px) {
+    .series-sort div:last-child {
+      width: 21.7391304348%;
+      float: right;
+      margin-right: 0; } }
+
+@media (min-width: 768px) {
+  .series .ep {
+    width: 21.7391304348%;
+    float: left;
+    margin-right: 4.347826087%; } }
+
+@media (min-width: 768px) {
+  .series .series-details {
+    width: 47.8260869565%;
+    float: left;
+    margin-right: 4.347826087%; } }
+
+.series .series-details .series-team .cast ul:first-child {
+  width: 45.4545454545%;
+  float: left;
+  margin-right: 9.0909090909%; }
+
+.series .series-details .series-team .cast ul:nth-child(2) {
+  width: 45.4545454545%;
+  float: right;
+  margin-right: 0; }
+
+@media (min-width: 768px) {
+  .series .series-details .series-team .cast {
+    width: 45.4545454545%;
+    float: left;
+    margin-right: 9.0909090909%; } }
+
+.series .series-details .series-team .producers ul:first-child {
+  width: 45.4545454545%;
+  float: left;
+  margin-right: 9.0909090909%; }
+
+.series .series-details .series-team .producers ul:nth-child(2) {
+  width: 45.4545454545%;
+  float: right;
+  margin-right: 0; }
+
+@media (min-width: 768px) {
+  .series .series-details .series-team .producers {
+    width: 45.4545454545%;
+    float: right;
+    margin-right: 0; } }
+
+.series .series-details .series-team .directors ul:first-child {
+  width: 45.4545454545%;
+  float: left;
+  margin-right: 9.0909090909%; }
+
+.series .series-details .series-team .directors ul:nth-child(2) {
+  width: 45.4545454545%;
+  float: right;
+  margin-right: 0; }
+
+@media (min-width: 768px) {
+  .series .series-details .series-team .directors {
+    width: 45.4545454545%;
+    float: left;
+    margin-right: 9.0909090909%; } }
+
+@media (min-width: 768px) {
+  .series .series-adv {
+    width: 21.7391304348%;
+    float: right;
+    margin-right: 0; } }
+
+.related-titles ul li:nth-of-type(1) {
+  width: 17.2413793103%;
+  float: left;
+  margin-right: 3.4482758621%; }
+
+.related-titles ul li:nth-of-type(2) {
+  width: 17.2413793103%;
+  float: left;
+  margin-right: 3.4482758621%; }
+
+.related-titles ul li:nth-of-type(3) {
+  width: 17.2413793103%;
+  float: left;
+  margin-right: 3.4482758621%; }
+
+.related-titles ul li:nth-of-type(4) {
+  width: 17.2413793103%;
+  float: left;
+  margin-right: 3.4482758621%; }
+
+.related-titles ul li:nth-of-type(5) {
+  width: 17.2413793103%;
+  float: right;
+  margin-right: 0; }
+
+/*End series-details layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 /*Start footer layout @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 .footer div {
   max-width: 800px;
@@ -244,6 +381,8 @@ header {
     @media (min-width: 1000px) {
       header .profile-nav {
         font-size: 8px; } }
+    header .profile-nav li:last-child {
+      background-color: #323232; }
 
 /*End header  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 .movies-lists {
@@ -262,9 +401,10 @@ header {
       .movies-lists ul {
         height: 200px; } }
     .movies-lists ul div {
-      color: grey; }
+      color: grey;
+      margin-bottom: 5px; }
     .movies-lists ul li img {
-      width: 60px;
+      width: 50px;
       height: 50px; }
       @media (min-width: 768px) {
         .movies-lists ul li img {
@@ -280,16 +420,121 @@ header {
           height: auto; } }
 
 .movie-sort {
+  padding: 20px;
   height: 60px;
   color: #fff;
   background-color: #323232; }
   .movie-sort div {
-    font-size: 10px; }
+    text-align: center;
+    font-size: 8px; }
+    @media (min-width: 768px) {
+      .movie-sort div {
+        font-size: 10px; } }
   .movie-sort select {
     background-color: #000000;
     border: none;
+    padding: 5px;
+    font-size: 10px;
+    margin-right: 5px;
+    color: #fff;
+    width: 40px; }
+    @media (min-width: 768px) {
+      .movie-sort select {
+        width: auto; } }
+
+.series-sort {
+  padding: 20px;
+  height: 60px;
+  color: #fff;
+  background-color: #323232; }
+  .series-sort div {
+    text-align: center;
+    font-size: 8px; }
+    @media (min-width: 768px) {
+      .series-sort div {
+        font-size: 10px; } }
+  .series-sort select {
+    background-color: #000000;
+    border: none;
+    padding: 5px;
+    font-size: 10px;
     margin-right: 5px;
     color: #fff; }
+    @media (min-width: 768px) {
+      .series-sort select {
+        width: 200px; } }
+
+.series {
+  height: 1200px;
+  padding: 20px;
+  background-color: #000000;
+  color: #fff; }
+  @media (min-width: 768px) {
+    .series {
+      height: 700px; } }
+  .series .series-details {
+    margin: 30px auto; }
+    .series .series-details .title {
+      font-size: 20px; }
+    .series .series-details h3 {
+      font-size: 16px; }
+    .series .series-details .description {
+      font-size: 11px; }
+    .series .series-details span {
+      font-size: 11px;
+      color: grey; }
+    .series .series-details .social-icons i {
+      color: grey;
+      border: solid 1px grey;
+      border-radius: 50%;
+      padding: 10px 15px; }
+      .series .series-details .social-icons i:last-child {
+        padding: 10px; }
+    .series .series-details .series-team {
+      font-size: 15px; }
+      @media (min-width: 768px) {
+        .series .series-details .series-team {
+          font-size: 10px; } }
+      @media (min-width: 1000px) {
+        .series .series-details .series-team {
+          font-size: 11px; } }
+      .series .series-details .series-team .cast {
+        margin-bottom: 30px; }
+      .series .series-details .series-team .producers {
+        margin-bottom: 30px; }
+
+.related-titles {
+  padding: 20px;
+  background-color: #181818;
+  color: #fff;
+  font-size: 7px; }
+  @media (min-width: 768px) {
+    .related-titles {
+      font-size: 10px; } }
+  .related-titles ul {
+    height: 100px;
+    margin: 10px; }
+    @media (min-width: 768px) {
+      .related-titles ul {
+        height: 200px; } }
+    .related-titles ul div {
+      color: grey;
+      margin-bottom: 5px; }
+    .related-titles ul li img {
+      width: 50px;
+      height: 50px; }
+      @media (min-width: 768px) {
+        .related-titles ul li img {
+          width: 140px;
+          height: 100px; } }
+      @media (min-width: 1000px) {
+        .related-titles ul li img {
+          width: 190px;
+          height: auto; } }
+      @media (min-width: 1200px) {
+        .related-titles ul li img {
+          width: 220px;
+          height: auto; } }
 
 .footer {
   text-align: center;
