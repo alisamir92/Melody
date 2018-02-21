@@ -84,8 +84,24 @@ Author URI: http://mohamadelbialy.com
   margin-right: 0; }
 
 /*End movies-lists layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-/*Start archive-main layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-/*End archive-main layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*Start movies layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+.movie-sort {
+  padding: 20px; }
+  .movie-sort div:first-child {
+    width: 31.4285714286%;
+    float: left;
+    margin-right: 2.8571428571%; }
+  .movie-sort div:last-child {
+    width: 48.5714285714%;
+    float: right;
+    margin-right: 0; }
+    @media (min-width: 768px) {
+      .movie-sort div:last-child {
+        width: 31.4285714286%;
+        float: right;
+        margin-right: 0; } }
+
+/*End movies layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 /*Start footer layout @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 .footer div {
   max-width: 800px;
@@ -262,6 +278,18 @@ header {
         .movies-lists ul li img {
           width: 220px;
           height: auto; } }
+
+.movie-sort {
+  height: 60px;
+  color: #fff;
+  background-color: #323232; }
+  .movie-sort div {
+    font-size: 10px; }
+  .movie-sort select {
+    background-color: #000000;
+    border: none;
+    margin-right: 5px;
+    color: #fff; }
 
 .footer {
   text-align: center;

@@ -1,0 +1,14 @@
+.movie-sort{
+    height: 60px;
+    color: $primary-fcolor;
+    background-color: #323232;
+    div{
+        font-size: 10px;
+    }
+    select{
+        background-color: $sec-fcolor;
+        border: none;
+        margin-right: 5px;
+        color: $primary-fcolor;
+    }
+}

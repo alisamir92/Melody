@@ -91,10 +91,30 @@ header{
 /*End movies-lists layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
 
-/*Start archive-main layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*Start movies layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+.movie-sort{
+    padding: 20px;
+    div{
+        &:first-child{
+        @include span(2 of 6);
+            
+        }
+        &:last-child{
+        @include span(3 at 4 of 6);
+            @include breakpoint($tablet){
+                @include span(2 at 5 of 6);
+            }
+            @include breakpoint($laptop){
+               
+            }
+            @include breakpoint($desktop){
+                
+            }
+        }
+    }
+}
 
-
-/*End archive-main layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*End movies layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
 
 /*Start footer layout @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
