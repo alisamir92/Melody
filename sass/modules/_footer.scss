@@ -7,8 +7,24 @@
         color: $primary-fcolor;
     }
     .social-media{
-        i{
-            margin: 5px;
-        }
+        a{
+            i{
+                margin: 5px;
+            }
+            &:first-child{
+                i{
+                    &:hover{
+                        color: #7654ff;
+                    }
+                }
+            }
+            &:last-child{
+                i{
+                    &:hover{
+                        color: green;
+                    }
+                }
+            }
+    }
     }
 }

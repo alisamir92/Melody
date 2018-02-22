@@ -24,9 +24,9 @@
 }
 
 .series{
-    height: auto;
+    height: 1330px;
     @include breakpoint($tablet){
-        height: 700px;
+        height: 830px;
     }
     padding: 20px;
     background-color: $sec-fcolor;
@@ -49,17 +49,33 @@
                  
             }
             .social-icons{
-                i{
+                a{
+                    i{
                         color: grey;
                         border: solid 1px grey;
                         border-radius: 50%;
                         padding: 10px 15px;
-                    
+                    }
+                    &:first-child{
+                        i{
+                            &:hover{
+                                color: #7654ff;
+                                border: solid 1px #7654ff;
+                            }
+                        }
+                    }
                     &:last-child{
-                        padding: 10px;
+                        i{
+                            padding: 10px;
+                            &:hover{
+                                color: green;
+                                border: solid 1px green;
+                            }
+                            }
+                        }
                     }
                 }
-            }
+        }
             
             .series-team{
                 font-size: 15px;
@@ -91,7 +107,7 @@
         .series-adv{
             
         }
-    }
+    
 
 .related-titles{
     padding: 20px;

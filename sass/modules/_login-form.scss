@@ -1,0 +1,18 @@
+.login-form{
+    font-family: $main-font;
+    background-color: $fifth-fcolor;
+    text-align: center;
+    @include breakpoint($tablet){
+        height: 367px;
+    }
+    color: $primary-fcolor;
+    padding: 20px 10px;
+    
+        .login-title{
+            background-color: $sec-fcolor;
+            padding: 10px;
+            margin-bottom: 10px;
+            color: white;
+        }
+            
+    }

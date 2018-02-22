@@ -381,7 +381,7 @@ a {
 
 body {
   background-color: #ececec;
-  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 /*Start Adv. @@@@@@@@@@@@@@@@@@@@@@*/
 .adv {
@@ -551,13 +551,19 @@ header {
     border: none; }
     .movie-details .movie-description .movie-buttons button a {
       color: #fff; }
-  .movie-details .movie-description .movie-social i {
+  .movie-details .movie-description .movie-social a i {
     color: grey;
     border: solid 1px grey;
     border-radius: 50%;
+    padding: 10px; }
+  .movie-details .movie-description .movie-social a:first-child i {
     padding: 10px 12px; }
-    .movie-details .movie-description .movie-social i:last-child {
-      padding: 10px; }
+    .movie-details .movie-description .movie-social a:first-child i:hover {
+      color: #7654ff;
+      border: solid 1px #7654ff; }
+  .movie-details .movie-description .movie-social a:last-child i:hover {
+    color: green;
+    border: solid 1px green; }
 
 .series-sort {
   padding: 20px;
@@ -582,13 +588,13 @@ header {
         width: 200px; } }
 
 .series {
-  height: auto;
+  height: 1330px;
   padding: 20px;
   background-color: #000000;
   color: #fff; }
   @media (min-width: 768px) {
     .series {
-      height: 700px; } }
+      height: 830px; } }
   .series .series-details {
     margin: 30px auto; }
     .series .series-details .title {
@@ -597,25 +603,31 @@ header {
       font-size: 16px; }
     .series .series-details .description {
       font-size: 11px; }
-    .series .series-details .social-icons i {
+    .series .series-details .social-icons a i {
       color: grey;
       border: solid 1px grey;
       border-radius: 50%;
       padding: 10px 15px; }
-      .series .series-details .social-icons i:last-child {
-        padding: 10px; }
-    .series .series-details .series-team {
-      font-size: 15px; }
-      @media (min-width: 768px) {
-        .series .series-details .series-team {
-          font-size: 10px; } }
-      @media (min-width: 1000px) {
-        .series .series-details .series-team {
-          font-size: 11px; } }
-      .series .series-details .series-team .cast {
-        margin-bottom: 30px; }
-      .series .series-details .series-team .producers {
-        margin-bottom: 30px; }
+    .series .series-details .social-icons a:first-child i:hover {
+      color: #7654ff;
+      border: solid 1px #7654ff; }
+    .series .series-details .social-icons a:last-child i {
+      padding: 10px; }
+      .series .series-details .social-icons a:last-child i:hover {
+        color: green;
+        border: solid 1px green; }
+  .series .series-team {
+    font-size: 15px; }
+    @media (min-width: 768px) {
+      .series .series-team {
+        font-size: 10px; } }
+    @media (min-width: 1000px) {
+      .series .series-team {
+        font-size: 11px; } }
+    .series .series-team .cast {
+      margin-bottom: 30px; }
+    .series .series-team .producers {
+      margin-bottom: 30px; }
 
 .related-titles {
   padding: 20px;
@@ -650,6 +662,36 @@ header {
           width: 220px;
           height: auto; } }
 
+.login-form {
+  font-family: "Raleway", sans-serif;
+  background-color: #323232;
+  text-align: center;
+  color: #fff;
+  padding: 20px 10px; }
+  @media (min-width: 768px) {
+    .login-form {
+      height: 367px; } }
+  .login-form .login-title {
+    background-color: #000000;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: white; }
+
+.about-us {
+  font-family: "Raleway", sans-serif;
+  background-color: #323232;
+  text-align: center;
+  color: #fff;
+  padding: 20px 10px; }
+  @media (min-width: 768px) {
+    .about-us {
+      height: 367px; } }
+  .about-us h1 {
+    background-color: #000000;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: white; }
+
 .footer {
   text-align: center;
   padding: 50px;
@@ -657,7 +699,11 @@ header {
   background-color: #000000; }
   .footer a {
     color: #fff; }
-  .footer .social-media i {
+  .footer .social-media a i {
     margin: 5px; }
+  .footer .social-media a:first-child i:hover {
+    color: #7654ff; }
+  .footer .social-media a:last-child i:hover {
+    color: green; }
 
 /*# sourceMappingURL=style.css.map */

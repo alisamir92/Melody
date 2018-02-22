@@ -60,16 +60,32 @@
             }
         }
         .movie-social{
-                i{
+                a{
+                    i{
                         color: grey;
                         border: solid 1px grey;
                         border-radius: 50%;
-                        padding: 10px 12px;
-                    
-                    &:last-child{
                         padding: 10px;
                     }
-                }
+                    &:first-child{
+                        i{
+                            padding: 10px 12px;
+                            &:hover{
+                                color: #7654ff;
+                                border: solid 1px #7654ff;
+                            }
+                        }
+                    }
+                    &:last-child{
+                        i{
+                            
+                            &:hover{
+                                color: green;
+                                border: solid 1px green;
+                            }
+                            }
+                        }
+                    }
             }
     }
 }
