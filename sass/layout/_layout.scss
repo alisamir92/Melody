@@ -121,6 +121,70 @@ header{
 /*End movies layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
 
+/*Start movies layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+.movie-details{
+    
+    
+    
+        .movie-video{
+            @include breakpoint($tablet){
+            @include span(1 of 2);
+            }
+            .movie-team{
+                ul{
+                        &:nth-of-type(1){
+                            
+                            @include span(1 of 2);
+                            
+                        }
+                        &:nth-of-type(2){
+                            
+                            @include span(1 at 2 of 2);
+                            
+                        }
+                    }
+                .movie-cast{
+                    
+                    @include breakpoint($tablet){
+                    @include span(1 of 2);
+                    }
+                    @include breakpoint($laptop){
+                    @include span(1 of 3);
+                    }
+                    
+                }
+                .movie-producers{
+                   
+                    @include breakpoint($tablet){
+                    @include span(1 at 2 of 2);
+                    }
+                     @include breakpoint($laptop){
+                    @include span(1 at 2 of 3);
+                    }
+                }
+                .movie-directors{
+                    
+                    @include breakpoint($tablet){
+                    @include span(1 of 2);
+                    }
+                    @include breakpoint($laptop){
+                    @include span(1 at 3 of 3);
+                    }
+                }
+            }
+        }
+        .movie-description{
+            @include breakpoint($tablet){
+            @include span(1 at 2 of 2);
+            }
+        }
+    
+}
+
+/*End movies layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
 /*Start series-details layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 .series-sort{
     div{

@@ -1,6 +1,12 @@
 /*Start Adv. @@@@@@@@@@@@@@@@@@@@@@*/
 .adv{
     text-align: center;
+    img{
+        width: 300px;
+        @include breakpoint($tablet){
+        width: auto; 
+    }
+    }
 }
 /*End Adv. @@@@@@@@@@@@@@@@@@@@@@@@@*/
 

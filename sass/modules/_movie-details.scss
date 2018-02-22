@@ -1,0 +1,75 @@
+.movie-details{
+    height: 930px;
+    @include breakpoint($tablet){
+        height: 450px;   
+    }
+    padding: 20px;
+    font-size: 12px;
+    @include breakpoint($tablet){
+        font-size: 8px;  
+    }
+    @include breakpoint($laptop){
+        font-size: 7px;  
+    }
+    color: $primary-fcolor;
+    background-color: $fourth-fcolor;
+    
+    .movie-video{
+    img{
+        width: 285px;
+        @include breakpoint($tablet){
+            width: 370px;
+        }
+        @include breakpoint($laptop){
+            width: 500px;
+        }
+        @include breakpoint($desktop){
+            width: 550px;
+        }
+    }
+    h3{
+        margin: 6px auto;
+        font-size: 12px;
+    }
+}
+    .movie-description{
+        img{
+            
+        }
+        h1{
+            font-size: 20px;
+        }
+        p{
+            font-size: 9px;
+        }
+        span{
+            font-size: 11px;
+            color: grey;
+        }
+        .movie-buttons{
+            
+            button{
+                background-color: grey;
+                padding: 5px;
+                margin: 10px 5px;
+                width: 100px;
+                border: none;
+                a{
+                    color: $primary-fcolor;
+                }
+            }
+        }
+        .movie-social{
+                i{
+                        color: grey;
+                        border: solid 1px grey;
+                        border-radius: 50%;
+                        padding: 10px 12px;
+                    
+                    &:last-child{
+                        padding: 10px;
+                    }
+                }
+            }
+    }
+}

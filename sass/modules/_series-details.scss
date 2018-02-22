@@ -24,7 +24,7 @@
 }
 
 .series{
-    height: 1200px;
+    height: auto;
     @include breakpoint($tablet){
         height: 700px;
     }
@@ -46,13 +46,11 @@
                 font-size: 11px;
             }
             span{
-                font-size: 11px;
-                color: grey;
+                 
             }
             .social-icons{
                 i{
-                    color: grey;
-                    
+                        color: grey;
                         border: solid 1px grey;
                         border-radius: 50%;
                         padding: 10px 15px;

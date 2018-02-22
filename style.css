@@ -116,6 +116,66 @@ Author URI: http://mohamadelbialy.com
       margin-right: 0; } }
 
 /*End movies layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*Start movies layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+@media (min-width: 768px) {
+  .movie-details .movie-video {
+    width: 45.4545454545%;
+    float: left;
+    margin-right: 9.0909090909%; } }
+
+.movie-details .movie-video .movie-team ul:nth-of-type(1) {
+  width: 45.4545454545%;
+  float: left;
+  margin-right: 9.0909090909%; }
+
+.movie-details .movie-video .movie-team ul:nth-of-type(2) {
+  width: 45.4545454545%;
+  float: right;
+  margin-right: 0; }
+
+@media (min-width: 768px) {
+  .movie-details .movie-video .movie-team .movie-cast {
+    width: 45.4545454545%;
+    float: left;
+    margin-right: 9.0909090909%; } }
+
+@media (min-width: 1000px) {
+  .movie-details .movie-video .movie-team .movie-cast {
+    width: 29.4117647059%;
+    float: left;
+    margin-right: 5.8823529412%; } }
+
+@media (min-width: 768px) {
+  .movie-details .movie-video .movie-team .movie-producers {
+    width: 45.4545454545%;
+    float: right;
+    margin-right: 0; } }
+
+@media (min-width: 1000px) {
+  .movie-details .movie-video .movie-team .movie-producers {
+    width: 29.4117647059%;
+    float: left;
+    margin-right: 5.8823529412%; } }
+
+@media (min-width: 768px) {
+  .movie-details .movie-video .movie-team .movie-directors {
+    width: 45.4545454545%;
+    float: left;
+    margin-right: 9.0909090909%; } }
+
+@media (min-width: 1000px) {
+  .movie-details .movie-video .movie-team .movie-directors {
+    width: 29.4117647059%;
+    float: right;
+    margin-right: 0; } }
+
+@media (min-width: 768px) {
+  .movie-details .movie-description {
+    width: 45.4545454545%;
+    float: right;
+    margin-right: 0; } }
+
+/*End movies layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 /*Start series-details layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 .series-sort div:first-child {
   width: 45.4545454545%;
@@ -326,6 +386,11 @@ body {
 /*Start Adv. @@@@@@@@@@@@@@@@@@@@@@*/
 .adv {
   text-align: center; }
+  .adv img {
+    width: 300px; }
+    @media (min-width: 768px) {
+      .adv img {
+        width: auto; } }
 
 /*End Adv. @@@@@@@@@@@@@@@@@@@@@@@@@*/
 /*Start header @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
@@ -442,6 +507,58 @@ header {
       .movie-sort select {
         width: auto; } }
 
+.movie-details {
+  height: 930px;
+  padding: 20px;
+  font-size: 12px;
+  color: #fff;
+  background-color: #181818; }
+  @media (min-width: 768px) {
+    .movie-details {
+      height: 450px; } }
+  @media (min-width: 768px) {
+    .movie-details {
+      font-size: 8px; } }
+  @media (min-width: 1000px) {
+    .movie-details {
+      font-size: 7px; } }
+  .movie-details .movie-video img {
+    width: 285px; }
+    @media (min-width: 768px) {
+      .movie-details .movie-video img {
+        width: 370px; } }
+    @media (min-width: 1000px) {
+      .movie-details .movie-video img {
+        width: 500px; } }
+    @media (min-width: 1200px) {
+      .movie-details .movie-video img {
+        width: 550px; } }
+  .movie-details .movie-video h3 {
+    margin: 6px auto;
+    font-size: 12px; }
+  .movie-details .movie-description h1 {
+    font-size: 20px; }
+  .movie-details .movie-description p {
+    font-size: 9px; }
+  .movie-details .movie-description span {
+    font-size: 11px;
+    color: grey; }
+  .movie-details .movie-description .movie-buttons button {
+    background-color: grey;
+    padding: 5px;
+    margin: 10px 5px;
+    width: 100px;
+    border: none; }
+    .movie-details .movie-description .movie-buttons button a {
+      color: #fff; }
+  .movie-details .movie-description .movie-social i {
+    color: grey;
+    border: solid 1px grey;
+    border-radius: 50%;
+    padding: 10px 12px; }
+    .movie-details .movie-description .movie-social i:last-child {
+      padding: 10px; }
+
 .series-sort {
   padding: 20px;
   height: 60px;
@@ -465,7 +582,7 @@ header {
         width: 200px; } }
 
 .series {
-  height: 1200px;
+  height: auto;
   padding: 20px;
   background-color: #000000;
   color: #fff; }
@@ -480,9 +597,6 @@ header {
       font-size: 16px; }
     .series .series-details .description {
       font-size: 11px; }
-    .series .series-details span {
-      font-size: 11px;
-      color: grey; }
     .series .series-details .social-icons i {
       color: grey;
       border: solid 1px grey;
@@ -543,5 +657,7 @@ header {
   background-color: #000000; }
   .footer a {
     color: #fff; }
+  .footer .social-media i {
+    margin: 5px; }
 
 /*# sourceMappingURL=style.css.map */
