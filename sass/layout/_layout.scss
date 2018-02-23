@@ -306,7 +306,137 @@ header{
 
 /*End series-details layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
+/*Start base-elements layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
+.base-elements{
+    
+    .elements-title{
+        @include container($main-width);
+        
+        img{
+            @include breakpoint($tablet){
+            @include span(1 of 2);
+            }
+        }
+        div{
+            @include breakpoint($tablet){
+            @include span(1 at 2 of 2);
+            }
+        }
+    }
+    .elements-selects{
+        ul{
+            li{
+                
+                &:first-child{
+                    @include breakpoint($tablet){
+                    @include span(1 of 3);
+                    }
+                    @include breakpoint($laptop){
+                    @include span(1 of 4);
+                    }
+                    
+                }
+                &:nth-child(2){
+                    @include breakpoint($tablet){
+                    @include span(1 at 2 of 3);
+                    }
+                    @include breakpoint($laptop){
+                    @include span(1 at 2 of 4);
+                    }
+                }
+                &:nth-child(3){
+                    @include breakpoint($tablet){
+                    @include span(1 at 3 of 3);
+                    }
+                    @include breakpoint($laptop){
+                    @include span(1 at 3 of 4);
+                    }
+                }
+                &:last-child{
+                    @include breakpoint($tablet){
+                    @include span(1 of 3);
+                    }
+                    @include breakpoint($laptop){
+                    @include span(1 at 4 of 4);
+                    }
+                    
+                }
+                
+            }
+        }
+    }
+    .elements-forms{
+        ul{
+            li{
+                &:first-child{
+                    @include breakpoint($tablet){
+                    @include span(1 of 2);
+                    }
+                    @include breakpoint($laptop){
+                    @include span(1 of 4);
+                    }
+                }
+                &:nth-child(2){
+                    @include breakpoint($tablet){
+                    @include span(1 at 2 of 2);
+                    }
+                    @include breakpoint($laptop){
+                    @include span(1 at 2 of 4);
+                    }
+                }
+                &:nth-child(3){
+                    @include breakpoint($tablet){
+                    @include span(1 of 2);
+                    }
+                    @include breakpoint($laptop){
+                    @include span(1 at 3 of 4);
+                    }
+                }
+                &:last-child{
+                    @include breakpoint($tablet){
+                    @include span(1 at 2 of 2);
+                    }
+                    @include breakpoint($laptop){
+                    @include span(1 at 4 of 4);
+                    }
+                    
+                }
+                
+            }
+        }
+    }
+    .elements-buttons{
+        ul{
+            li{
+                &:first-child{
+                    @include breakpoint($laptop){
+                    @include span(1 of 4);
+                    }
+                }
+                &:nth-child(2){
+                    @include breakpoint($laptop){
+                    @include span(1 at 2 of 4);
+                    }
+                }
+                &:nth-child(3){
+                    @include breakpoint($laptop){
+                    @include span(2 at 3 of 4);
+                    }
+                }
+                
+                
+            }
+        }
+    }
+    .heading-sizes{
+        @include container($main-width);
+    }
+    
+}
+
+
+/*End base-elements layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
 /*Start footer layout @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 

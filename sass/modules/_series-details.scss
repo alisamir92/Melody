@@ -17,9 +17,19 @@
         font-size: 10px;
         margin-right: 5px;
         color: $primary-fcolor;
+        width: 80px;
         @include breakpoint($tablet){
             width: 200px;
         }
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+        background: $sec-fcolor url("img/plus.png") no-repeat 95% 50%;
+    
+    
+        
     }
 }
 
@@ -68,8 +78,8 @@
                         i{
                             padding: 10px;
                             &:hover{
-                                color: green;
-                                border: solid 1px green;
+                                color: #29c5f6;
+                                border: solid 1px #29c5f6;
                             }
                             }
                         }
