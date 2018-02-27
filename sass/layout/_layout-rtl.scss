@@ -14,24 +14,39 @@ $bp-desktop: 780px;
 $main-width: 940px;
 
 
+//header{
+//    .search-form{
+//        
+//        
+//        .search-icon{
+//            
+//            @include span(1 of 10);
+//            
+//        }
+//        .header-search{
+//            @include span(9 at 2 of 10);
+//            float: right;
+//            margin-top: 7px;
+//        }
+//        
+//    }
+//}
+
 header{
     .search-form{
         
         
         .search-icon{
             
-            @include span(1 of 10);
+            
             
         }
         .header-search{
-            @include span(9 at 2 of 10);
-            float: right;
-            margin-top: 7px;
+            padding-right: 5px;
         }
         
     }
 }
-
 
 .plus{
         background-color: $sec-fcolor;

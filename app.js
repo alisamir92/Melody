@@ -43,38 +43,32 @@ $(document).ready(function () {
     
     
     
-    $(".select").on("click", function () {
-        $(this).toggleClass("plus").toggleClass("minus");
+    $(".select").on({
+        click: function () {
+            $(this).toggleClass("plus").toggleClass("minus");
+        },
+        focusout: function () {
+            $(this).addClass("plus").removeClass("minus");
+        
+        }
     });
     
-    
-    $(".english-arabic").on("click", function () {
-        $(this).toggleClass("en-ar").toggleClass("minus-en-ar");
+    $(".english-arabic").on({
+        click: function () {
+            $(this).toggleClass("en-ar").toggleClass("minus-en-ar");
+        },
+        focusout: function () {
+            $(this).addClass("en-ar").removeClass("minus-en-ar");
+        
+        }
     });
     
-    
+  
     $(".search-icon").on("click", function (event) {
         event.preventDefault();
         $(".header-search").slideToggle();
     });
     
-    
-//    window.onClick = function(){
-//        $("select").addClass("plus").removeClass("minus");
-//    }
-//    $("header, .movie-sort, .movie-list, footer").on("click", function () {
-//        $(".select:focus").toggleClass("plus").toggleClass("minus");
-//    });
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+  
     
 });

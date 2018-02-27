@@ -299,17 +299,8 @@ Author URI: http://mohamadelbialy.com
 
 /*End footer layout @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 /*break points*/
-header .search-form .search-icon {
-  width: 8.4745762712%;
-  float: right;
-  margin-left: 1.6949152542%; }
-
 header .search-form .header-search {
-  width: 89.8305084746%;
-  float: left;
-  margin-left: 0;
-  float: right;
-  margin-top: 7px; }
+  padding-right: 5px; }
 
 .plus {
   background-color: #141414;
