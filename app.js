@@ -19,7 +19,45 @@ $(document).ready(function () {
         }
     });
     
+    $('.owl-main-rtl').owlCarousel({
+        rtl: true,
+        loop: true,
+        margin: 10,
+        nav: true,
+        
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    });
+    
     $('.home-slider').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 5
+            }
+        }
+    });
+    
+    $('.home-slider-rtl').owlCarousel({
+        rtl: true,
         loop: true,
         margin: 10,
         nav: true,

@@ -48,6 +48,80 @@ header{
     }
 }
 
+//home-page sliders@@@@@@@@@@@@@@@@@@@@@@@
+
+.owl-main-rtl, .home-slider-rtl{
+
+        position: relative;
+        .owl-dots{
+            display: none;
+        }
+        .owl-nav{
+            color: #c4c2c2;
+            padding: 25px;
+            position: absolute;
+            width: 100%;
+            top: 5%;
+            @include breakpoint($tablet){
+                top: 30%;
+            }
+            @include breakpoint($laptop){
+                top: 35%;
+            }
+            .owl-next{
+                float: right;
+                background-color: transparent;
+            }
+            .owl-prev{
+                float: left;
+                background-color: transparent;
+            }
+        }
+    }
+
+.home-slider-rtl{
+        
+        
+        .owl-nav{
+            
+            padding: 0px;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0%;
+            .owl-next, .owl-prev{
+                height: 86%;
+                @include breakpoint($tablet){
+                    height: 90%;
+                }
+                @include breakpoint($laptop){
+                    height: 81%;
+                }
+                @include breakpoint($desktop){
+                    height: 86%;
+                }
+                
+                padding-top: 50px;
+                @include breakpoint($tablet){
+                    padding-top: 80px;
+                }
+                @include breakpoint($laptop){
+                    padding-top: 30px;
+                }
+                @include breakpoint($desktop){
+                    padding-top: 45px;
+                }
+                padding-right: 5px;
+                padding-left: 5px;
+                &:hover{
+                    background-color: $sec-fcolor;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 .plus{
         background-color: $sec-fcolor;
         padding: 5px;
