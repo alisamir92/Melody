@@ -2,13 +2,11 @@
     background-color: $sec-fcolor;
     color: $primary-fcolor;
     padding: 50px;
-    height: auto;
+    
     
     
     ul{
-        @include breakpoint($tablet){ 
-        height: 350px;
-        }
+        
     }
     h1{
             font-size: 32px;
@@ -45,213 +43,447 @@
     
     .elements-selects{
         margin-bottom: 30px;
-        button{
+        
+            .button, .hover{
+                width: 200px;
+                background-color: $third-fcolor;
+                border: none;
+                padding: 5px;
+                a{
+                    color: $primary-fcolor;
+                }
+                &:hover{
+                    background-color: transparent;
+                    border:solid 1px $primary-fcolor; 
+                }
+            }
+        
+            .plus{
+            -webkit-appearance: none;
+
             width: 200px;
-            background-color: $third-fcolor;
-            border: none;
+            height: 40px;
             padding: 5px;
-            a{
-                color: $primary-fcolor;
+            margin-bottom: 3px;
+            color: $primary-fcolor;
+            background: $sec-fcolor url("img/plus.png") no-repeat 95% 50%;
+
+            option{
+                background-color: $sixth-fcolor;
+
             }
         }
-        li:nth-child(4){
-            select{
-                font-size: 8px;
-                height: 20px;
-                width: 80px;
+
+            .minus{
+                -webkit-appearance: none;
+
+                width: 200px;
+                height: 40px;
+                padding: 5px;
+                margin-bottom: 3px;
+                color: $primary-fcolor;
+                background: $sec-fcolor url("img/minus.png") no-repeat 95% 50%;
+
+                option{
+                    background-color: $sixth-fcolor;
+
+                }
             }
+        
+        
+            .en-ar{
+                font-size: 8px ;
+                height: 20px ;
+                width: 80px ;
+                -webkit-appearance: none;
+                padding: 2px;
+
+                color: $primary-fcolor;
+                background: $sec-fcolor url("img/plus.png") no-repeat 95% 50%;
+
+                option{
+                    background-color: $sixth-fcolor;
+
+                }
+            }
+
+            .minus-en-ar{
+                font-size: 8px ;
+                height: 20px ;
+                width: 80px ;
+                -webkit-appearance: none;
+                padding: 2px;
+
+                color: $primary-fcolor;
+                background: $sec-fcolor url("img/minus.png") no-repeat 95% 50%;
+
+                option{
+                    background-color: $sixth-fcolor;
+
+                }
         }
     }
     
     .elements-forms{
-        margin-bottom: 30px;
-        ul{
+        input{
+            display: block;
+            margin-bottom: 20px
+        }
+        .empty{
+            margin-bottom: 30px;
+            .empty-no-border{
+                   
+                width: 200px;
+                background-color: #282828;
+                padding: 8px 5px;
+                border: none;
+                outline: none;
+                color: $primary-fcolor;
+
+            }
             
-            li{
-                margin-bottom: 30px;
-                &:first-child, &:nth-child(2), &:nth-child(3), &:nth-child(4){
-                    div{
-                        width: 217px;
-                        height: 30px;
-                        margin-bottom: 15px;
-                        &:first-child{
-                            
-                        }
-                        &:nth-child(2){
-                            background-color: $fifth-fcolor;
-                            input{
-                                width: 100%;
-                                background-color: transparent;
-                                padding: 3px 5px;
-                                border: none;
-                                outline: none;
-                                color: $primary-fcolor;
-                            }
-                        }
-                        &:nth-child(3){
-                            background-color: $fifth-fcolor;
-                            border:solid 1px $primary-fcolor;
-                            input{
-                                width: 100%;
-                                background-color: transparent;
-                                padding: 3px 5px;
-                                border: none;
-                                outline: none;
-                                color: $primary-fcolor;
-                            }
-                            
-                        }
-                        &:nth-child(4){
-                            background-color: $seventh-fcolor;
-                            input{
-                                width: 100%;
-                                background-color: transparent;
-                                padding: 3px 5px;
-                                border:none;
-                                outline: none;
-                                color: $primary-fcolor;
-                            }
-                        }
-                        &:nth-child(5){
-                            background-color: $fifth-fcolor;
-                            i{
-                                margin: auto 7px;
-                            }
-                            input{
-                                background-color: transparent;
-                                padding: 3px 5px;
-                                border:none;
-                                outline: none;
-                                color: $primary-fcolor;
-                            }
-                        }
-                        &:last-child{
-                            border:solid 1px $primary-fcolor;
-                            padding-left: 10px;
+            .empty-border{
+                width: 200px;
+                background-color: #282828;
+                padding: 8px 5px;
+                border: none;
+                outline: none;
+                color: $primary-fcolor;
+                border:solid 1px $primary-fcolor; 
+            }
+            
+            .empty-email{
+                width: 200px;
+                background-color: $seventh-fcolor;
+                padding: 8px 5px;
+                border: none;
+                outline: none;
+                color: $primary-fcolor;
+                
+            }
+            
+            .empty-username{
+                background-color: $fifth-fcolor;
+                width: 200px;
+                height: 31px;
+                margin-bottom: 20px;
+                i{
+                    margin: auto 7px;
+                }
+                input{
+                    background-color: transparent;
+                    display: inline;
+                    width: 160px;
+                    padding: 3px 5px;
+                    border:none;
+                    outline: none;
+                    color: $primary-fcolor;
+                }
+            }
+            
+            .empty-select{
+                width: 200px;
+                background-color: transparent;
+                padding: 8px 5px;
+                border: none;
+                outline: none;
+                color: $primary-fcolor;
+                border:solid 1px #6f6f6f;
+            }
+        }
+        
+        .active{
+            margin-bottom: 30px;
+            .active-no-border{
+                   
+                width: 200px;
+                background-color: #282828;
+                padding: 8px 5px;
+                border: none;
+                outline: none;
+                color: $primary-fcolor;
+                
+                &:focus{
+                    border-bottom: solid 1px $primary-fcolor;
+                }
+
+            }
+            
+            .active-border{
+                width: 200px;
+                background-color: #282828;
+                padding: 8px 5px;
+                border: none;
+                outline: none;
+                color: $primary-fcolor;
+                
+                
+                &:focus{
+                    background-color: #545454;
+                    border:solid 1px $primary-fcolor;
+                }
+            }
+            
+            .active-email{
+                width: 200px;
+                background-color: $seventh-fcolor;
+                padding: 8px 5px;
+                border: none;
+                outline: none;
+                color: $primary-fcolor;
+                
+                &:focus{
+                    border-bottom: solid 1px $primary-fcolor;
+                }
+            }
+            
+            .active-username{
+                background-color: $fifth-fcolor;
+                width: 200px;
+                height: 31px;
+                margin-bottom: 20px;
+                i{
+                    margin: auto 7px;
+                }
+                input{
+                    background-color: transparent;
+                    display: inline;
+                    width: 160px;
+                    padding: 3px 5px;
+                    border:none;
+                    outline: none;
+                    color: $primary-fcolor;
+                }
+                
+                &:focus-within{
+                    i{
+                        color: $third-fcolor;
+                    }
+                }
+            }
+            
+            .active-with-button{
+                position: relative;
+                width: 200px;
+                height: 31px;
+                border:solid 1px #6f6f6f;
+                input{
+                    background-color: transparent;
+                    display: inline;
+                    width: 160px;
+                    padding: 3px 5px;
+                    border:none;
+                    outline: none;
+                    color: $primary-fcolor;
+                }
+                button{
+                    background-color: $sixth-fcolor;
+                    border: none;
+                    position: absolute;
+                    right: 0px;
+                    width: 30px;
+                    height: 100%;
+                    a{
+                        color: $sec-fcolor;
+                    }
+                    &:hover{
+                    background-color: $primary-fcolor;
+                }
+                }
+                
+            }
+        }
+        
+        .correct{
+            margin-bottom: 30px;
+            .correct-no-border{
+                   
+                width: 200px;
+                background-color: #282828;
+                padding: 8px 5px;
+                border: none;
+                outline: none;
+                color: $primary-fcolor;
+                border-bottom: solid 1px #2bc56d;
+                
+            }
+            
+            .correct-border{
+                width: 200px;
+                
+                padding: 8px 5px;
+                border: none;
+                outline: none;
+                color: $sec-fcolor;
+                border:solid 1px #2bc56d;
+                background-color: $primary-fcolor;
+                
+            }
+            
+            .correct-email{
+                width: 200px;
+                background-color: $seventh-fcolor;
+                padding: 8px 5px;
+                border: none;
+                outline: none;
+                color: $primary-fcolor;
+                border-bottom: solid 1px #2bc56d;
+                
+            }
+            
+            .correct-password{
+                background-color: $fifth-fcolor;
+                width: 200px;
+                height: 31px;
+                margin-bottom: 20px;
+                i{
+                    margin: auto 7px;
+                    color: $third-fcolor;
+                    &:nth-of-type(2){
+                        color: #626262;
+                    }
+                }
+                input{
+                    background-color: transparent;
+                    display: inline;
+                    width: 140px;
+                    padding: 3px 5px;
+                    border:none;
+                    outline: none;
+                    color: $primary-fcolor;
+                }
+                
+                &:focus-within{
+                    i{
+                        
+                    }
+                }
+            }
+            
+            .correct-with-button{
+                position: relative;
+                width: 200px;
+                height: 31px;
+                border:solid 1px #6f6f6f;
+                input{
+                    background-color: transparent;
+                    display: inline;
+                    width: 160px;
+                    padding: 3px 5px;
+                    border:none;
+                    outline: none;
+                    color: $primary-fcolor;
+                }
+                button{
+                    background-color: $third-fcolor;
+                    border: none;
+                    position: absolute;
+                    right: 0px;
+                    width: 70px;
+                    height: 100%;
+                    a{
+                        color: $sec-fcolor;
+                    }
+                    &:hover{
+                        background-color: $sixth-fcolor;
+                        a{
+                            color: $primary-fcolor;
                         }
                     }
                 }
-                &:nth-child(2){
-                    div{
-                        
-                        &:first-child{
-                            
-                        }
-                        &:nth-child(2){
-                            input{
-                                border-bottom: solid 1px $primary-fcolor;
-                            }
-                        }
-                        &:nth-child(3){
-                            background-color: $sixth-fcolor;
-                        }
-                        &:nth-child(4){
-                            border-bottom: solid 1px $primary-fcolor;
-                            
-                        }
-                        &:nth-child(5){
-                            
-                            i{
-                                color: $third-fcolor;
-                            }
-                        
-                        }
-                        &:last-child{
-                            position: relative;
-                            button{
-                                background-color: $sixth-fcolor;
-                                border: none;
-                                position: absolute;
-                                right: 0px;
-                                width: 30px;
-                                height: 100%;
-                                a{
-                                    color: $sec-fcolor;
-                                }
-                            }
-                        }
+            }
+        }
+        
+        .error{
+            margin-bottom: 30px;
+            .error-no-border{
+                   
+                width: 200px;
+                background-color: #282828;
+                padding: 8px 5px;
+                border: none;
+                outline: none;
+                color: $primary-fcolor;
+                border-bottom: solid 1px #ff0000;
+                
+            }
+            
+            .error-border{
+                width: 200px;
+                
+                padding: 8px 5px;
+                border: none;
+                outline: none;
+                color: $sec-fcolor;
+                border:solid 1px #ff0000;
+                background-color: $primary-fcolor;
+                
+            }
+            
+            .error-email{
+                width: 200px;
+                background-color: $seventh-fcolor;
+                padding: 8px 5px;
+                border: none;
+                outline: none;
+                color: $primary-fcolor;
+                border-bottom: solid 1px #ff0000;
+                
+            }
+            
+            .error-password{
+                background-color: $fifth-fcolor;
+                width: 200px;
+                height: 31px;
+                margin-bottom: 20px;
+                i{
+                    margin: auto 7px;
+                    color: $third-fcolor;
+                    &:nth-of-type(2){
+                        color: #626262;
                     }
                 }
-                &:nth-child(3), &:nth-child(4){
-                    div{
-                        
-                        &:first-child{
-                            
-                        }
-                        &:nth-child(2){
-                            input{
-                                border-bottom: solid 1px #0bef57;
-                            }
-                        }
-                        &:nth-child(3){
-                            background-color: $primary-fcolor;
-                            border: solid 1px #0bef57;
-                        }
-                        &:nth-child(4){
-                            border-bottom: solid 1px #0bef57;
-                            
-                        }
-                        &:nth-child(5){
-                            input{
-                                width: 150px;
-                            }
-                            i{
-                                &:first-of-type{
-                                    color: $third-fcolor;
-                                }
-                                &:nth-of-type(2){
-                                    color: $primary-fcolor;
-                                }
-                                
-                            }
-                        
-                        }
-                        &:last-child{
-                            position: relative;
-                            button{
-                                background-color: $third-fcolor;
-                                border: none;
-                                position: absolute;
-                                right: 0px;
-                                width: 80px;
-                                height: 100%;
-                                a{
-                                    color: $sec-fcolor;
-                                }
-                            }
-                        }
-                    }
+                input{
+                    background-color: transparent;
+                    display: inline;
+                    width: 140px;
+                    padding: 3px 5px;
+                    border:none;
+                    outline: none;
+                    color: $primary-fcolor;
                 }
-                &:nth-child(4){
-                    div{
-                        
-                        &:first-child{
-                            
-                        }
-                        &:nth-child(2){
-                            input{
-                                border-bottom: solid 1px red;
-                            }
-                        }
-                        &:nth-child(3){
-                            background-color: $primary-fcolor;
-                            border: solid 1px red;
-                        }
-                        &:nth-child(4){
-                            border-bottom: solid 1px red;
-                            
-                        }
-                        &:nth-child(5){
-                        
-                        }
-                        &:last-child{
-                            
-                            button{
-                                width: 30px;
-                                a{
-                                    color: $primary-fcolor;
-                                }
-                            }
+                
+                
+            }
+            
+            .error-with-button{
+                position: relative;
+                width: 200px;
+                height: 31px;
+                border:solid 1px #6f6f6f;
+                input{
+                    background-color: transparent;
+                    display: inline;
+                    width: 160px;
+                    padding: 3px 5px;
+                    border:none;
+                    outline: none;
+                    color: $primary-fcolor;
+                }
+                button{
+                    background-color: $third-fcolor;
+                    border: none;
+                    position: absolute;
+                    right: 0px;
+                    width: 30px;
+                    height: 100%;
+                    a{
+                        color: $primary-fcolor;
+                    }
+                    &:hover{
+                        background-color: $sixth-fcolor;
+                        a{
+                            color: $primary-fcolor;
                         }
                     }
                 }
@@ -259,173 +491,395 @@
         }
     }
     
+    
+
+    
     .elements-buttons{
         margin-bottom: 30px;
-        ul{
-            @include breakpoint($tablet){
-                    height: 700px;
-                }
-            @include breakpoint($laptop){
-                    height: 250px;
-                }
-            li{
-                text-align: center;
-                &:first-child{
-                    button{
-                     width: 217px;
-                     height: 40px;
-                     margin-bottom: 10px;
+        
+            
+                .facebook-twitter{
+                    
+                    .facebook-color{
+                        width: 217px;
+                        height: 40px;
+                        background-color: #7654ff;
+                        border: none;
                         a{
-                            color: $primary-fcolor;
-                            i{
-                                margin-right: 10px;
-                            }
+                          color: $primary-fcolor;
+                          i{
+                               margin-right: 10px;
+                           }
+                       }
+                        &:hover{
+                            background-color: transparent;
+                            border: solid 1px $primary-fcolor;
                         }
-                        @include breakpoint($tablet){
-                            width: 150px;
-                        }
-                        @include breakpoint($laptop){
-                            width: 217px;
-                        }
-                        
-                        &:first-child{
+                    }
+                    
+                    .facebook-transparent{
+                        width: 217px;
+                        height: 40px;
+                        background-color: transparent;
+                        border: solid 1px $primary-fcolor;
+                        a{
+                          color: $primary-fcolor;
+                          i{
+                               margin-right: 10px;
+                           }
+                       }
+                        &:hover{
                             background-color: #7654ff;
                             border: none;
                         }
-                        &:nth-child(2){
+                    }
+                    
+                    .twitter-color{
+                        width: 217px;
+                        height: 40px;
+                        background-color: #29c5f6;
+                        border: none;
+                        a{
+                          color: $primary-fcolor;
+                          i{
+                               margin-right: 10px;
+                           }
+                       }
+                        &:hover{
                             background-color: transparent;
                             border: solid 1px $primary-fcolor;
                         }
-                        &:nth-child(3){
+                    }
+                    
+                    .twitter-transparent{
+                        width: 217px;
+                        height: 40px;
+                        background-color: transparent;
+                        border: solid 1px $primary-fcolor;
+                        a{
+                          color: $primary-fcolor;
+                          i{
+                               margin-right: 10px;
+                           }
+                       }
+                        &:hover{
                             background-color: #29c5f6;
                             border: none;
                         }
-                        &:last-child{
-                            background-color: transparent;
-                            border: solid 1px $primary-fcolor;
-                        }
                     }
+
                 }
-                &:nth-child(2){
-                    div{
-                        margin-bottom: 10px;
-                        button{
-                            background-color: transparent;
-                            a{
-                                color: $primary-fcolor;
-                            }
-                                &:first-child{
-                                    padding: 10px 20px;
-                                    margin-right: 30px;
-                                    border: solid 1px $primary-fcolor;
-                                    border-radius: 25px;
-                                    width: 100px;
-                                    height: 40px;
-                                    i{
-                                        margin-right: 10px;
-                                    }
-                                }
-                                &:last-child{
-                                    padding: 10px;
-                                    border: solid 1px $primary-fcolor;
-                                    border-radius: 50%;
-                                    width: 40px;
-                                    
-                                }
-                            }
-                        &:first-child{
-                           
-                        }
-                        &:nth-child(2){
-                            
-                        }
-                        &:nth-child(3){
-                            button{
-                                background-color: #7654ff;
-                                border: none;
-                            }
-                        }
-                        &:last-child{
-                            button{
-                                background-color: #29c5f6;
-                                border: none;
-                            }
-                        }
+        
+                .facebook-twitter-share{
+                    margin-bottom: 30px;
+                    button{
+                        margin: 10px;
                     }
-                }
-                &:last-child{
                     
-                    div{
-                        
-                        &:first-child{
-                            
-                            i{
-                                margin: 20px;
-                                &:first-child{
-                                    color: $sixth-fcolor;
-                                }
-                                &:last-child{
-                                    color: $primary-fcolor;
-                                }
-                            }
+                    .facebook-share-transparent{
+                        background-color: transparent;
+                        a{
+                            color: $primary-fcolor;
                         }
-                        &:nth-child(2), &:nth-child(3), &:last-child{
-                            button{
-                                background-color: $sixth-fcolor;
-                                border: none;
-                                padding: 5px 15px;
-                                font-size: 10px;
-                                
-                                a{
-                                    color: $sec-fcolor;
-                                }
-                            }
+                        padding: 10px 20px;
+                        margin-right: 30px;
+                        border: solid 1px $primary-fcolor;
+                        border-radius: 25px;
+                        width: 100px;
+                        height: 40px;
+                        i{
+                           margin-right: 10px;
                         }
-                        &:nth-child(3){
-                            button{
-                                background-color: $primary-fcolor;
-                                
-                            }
-                        }
-                        &:last-child{
-                            
+                        &:hover{
+                            background-color: #7654ff;
+                            border: none;
                         }
                     }
+                    
+                    .facebook-icon-transparent{
+                        padding: 10px;
+                        border: solid 1px $primary-fcolor;
+                        border-radius: 50%;
+                        width: 40px;
+                        background-color: transparent;
+                        a{
+                            color: $primary-fcolor;
+                        }
+                        &:hover{
+                            background-color: #7654ff;
+                            border: none;
+                        }
+                    }
+                    
+                    .twitter-share-transparent{
+                        background-color: transparent;
+                        a{
+                            color: $primary-fcolor;
+                        }
+                        padding: 10px 20px;
+                        margin-right: 30px;
+                        border: solid 1px $primary-fcolor;
+                        border-radius: 25px;
+                        width: 100px;
+                        height: 40px;
+                        i{
+                           margin-right: 10px;
+                        }
+                        &:hover{
+                            background-color: #29c5f6;
+                            border: none;
+                        }
+                    }
+                    
+                    .twitter-icon-transparent{
+                        padding: 10px;
+                        border: solid 1px $primary-fcolor;
+                        border-radius: 50%;
+                        width: 40px;
+                        background-color: transparent;
+                        a{
+                            color: $primary-fcolor;
+                        }
+                        &:hover{
+                            background-color: #29c5f6;
+                            border: none;
+                        }
+                    }
+                    
+                    
+                    .facebook-share-color{
+                        background-color: #7654ff;
+                        a{
+                            color: $primary-fcolor;
+                        }
+                        padding: 10px 20px;
+                        margin-right: 30px;
+                        border: none;
+                        border-radius: 25px;
+                        width: 100px;
+                        height: 40px;
+                        i{
+                           margin-right: 10px;
+                        }
+                        &:hover{
+                            background-color: transparent;
+                            border: solid 1px $primary-fcolor; 
+                        }
+                    }
+                    
+                    .facebook-icon-color{
+                        padding: 10px;
+                        border: none;
+                        border-radius: 50%;
+                        width: 40px;
+                        background-color: #7654ff;
+                        a{
+                            color: $primary-fcolor;
+                        }
+                        &:hover{
+                            background-color: transparent;
+                            border: solid 1px $primary-fcolor; 
+                        }
+                    }
+                    
+                    .twitter-share-color{
+                        background-color: #29c5f6;
+                        a{
+                            color: $primary-fcolor;
+                        }
+                        padding: 10px 20px;
+                        margin-right: 30px;
+                        border: none;
+                        border-radius: 25px;
+                        width: 100px;
+                        height: 40px;
+                        i{
+                           margin-right: 10px;
+                        }
+                        &:hover{
+                            background-color: transparent;
+                            border: solid 1px $primary-fcolor; 
+                        }
+                    }
+                    
+                    .twitter-icon-color{
+                        padding: 10px;
+                        border: none;
+                        border-radius: 50%;
+                        width: 40px;
+                        background-color: #29c5f6;
+                        a{
+                            color: $primary-fcolor;
+                        }
+                        &:hover{
+                            background-color: transparent;
+                            border: solid 1px $primary-fcolor; 
+                        }
+                    }
+ 
                 }
-            }
+        
+        
+        
+                .control-buttons{
+                    
+                    .play-icon-grey{
+                        color: $sixth-fcolor;
+                        margin: 20px;
+                        &:hover{
+                            color: $primary-fcolor;
+                        }
+                    }
+                    
+                    .play-icon-white{
+                        color: $primary-fcolor;
+                        margin: 20px;
+                        &:hover{
+                            color: $sixth-fcolor;
+                        }
+                    }
+                    
+                    .preview-grey{
+                        background-color: $sixth-fcolor;
+                        border: none;
+                        padding: 5px 15px;
+                        font-size: 10px;                
+                        a{
+                            color: $sec-fcolor;
+                        }
+                        &:hover{
+                            background-color: $primary-fcolor;
+                        }
+                    }
+                    
+                    .add-grey{
+                        background-color: $sixth-fcolor;
+                        border: none;
+                        padding: 5px 15px;
+                        font-size: 10px;                
+                        a{
+                            color: $sec-fcolor;
+                        }
+                        &:hover{
+                            background-color: $primary-fcolor;
+                        }
+                    }
+                    
+                    .remove-grey{
+                        background-color: $sixth-fcolor;
+                        border: none;
+                        padding: 5px 15px;
+                        font-size: 10px;                
+                        a{
+                            color: $sec-fcolor;
+                        }
+                        &:hover{
+                            background-color: $primary-fcolor;
+                        }
+                    }
+                    
+                    .browse-grey{
+                        background-color: $sixth-fcolor;
+                        border: none;
+                        padding: 5px 15px;
+                        font-size: 10px;                
+                        a{
+                            color: $sec-fcolor;
+                        }
+                        &:hover{
+                            background-color: $primary-fcolor;
+                        }
+                    }
+                    
+                    
+                    
+                    .preview-white{
+                        background-color: $primary-fcolor;
+                        border: none;
+                        padding: 5px 15px;
+                        font-size: 10px;                
+                        a{
+                            color: $sec-fcolor;
+                        }
+                        &:hover{
+                            background-color: $sixth-fcolor;
+                        }
+                    }
+                    
+                    .add-white{
+                        background-color: $primary-fcolor;
+                        border: none;
+                        padding: 5px 15px;
+                        font-size: 10px;                
+                        a{
+                            color: $sec-fcolor;
+                        }
+                        &:hover{
+                            background-color: $sixth-fcolor;
+                        }
+                    }
+                    
+                    .remove-white{
+                        background-color: $primary-fcolor;
+                        border: none;
+                        padding: 5px 15px;
+                        font-size: 10px;                
+                        a{
+                            color: $sec-fcolor;
+                        }
+                        &:hover{
+                            background-color: $sixth-fcolor;
+                        }
+                    }
+                    
+                    .browse-white{
+                        background-color: $primary-fcolor;
+                        border: none;
+                        padding: 5px 15px;
+                        font-size: 10px;                
+                        a{
+                            color: $sec-fcolor;
+                        }
+                        &:hover{
+                            background-color: $sixth-fcolor;
+                        }
+                    }
+                    
+                    .play-button-grey{
+                        background-color: $sixth-fcolor;
+                        border: none;
+                        padding: 5px 15px;
+                        font-size: 10px;                
+                        a{
+                            color: $sec-fcolor;
+                        }
+                        &:hover{
+                            background-color: $primary-fcolor;
+                        }
+                    } 
+                    
+                    .resume-button-grey{
+                        background-color: $sixth-fcolor;
+                        border: none;
+                        padding: 5px 15px;
+                        font-size: 10px;                
+                        a{
+                            color: $sec-fcolor;
+                        }
+                        &:hover{
+                            background-color: $primary-fcolor;
+                        }
+                    }
+                    
+
+                }
+            
         }
-    }
+    
     
     .heading-sizes{
         
     }
-    select{
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        -o-appearance: none;
-        -ms-appearance: none;
-        appearance: none;
-        width: 200px;
-        height: 40px;
-        padding: 5px;
-        margin-bottom: 3px;
-        color: $primary-fcolor;
-        background: $sec-fcolor url("img/plus.png") no-repeat 95% 50%;
-        
-        option{
-            background-color: $sixth-fcolor;
-            
-            
-            
-        }
-        option:before{
-    content: ">";
-    font-size:20px;
-    display:none;
-    padding-right:10px;
-    padding-left:5px;
-    color:#fff;
-}
-    }
     
-}
+    }
+

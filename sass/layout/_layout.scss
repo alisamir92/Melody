@@ -4,6 +4,7 @@ $susy: (
   gutters: 0.2,
   //gutter-position: inside,
   global-box-sizing: border-box,
+    flow: susy-get(flow)
   //output: isolate
 );
 
@@ -23,7 +24,7 @@ header{
     @include span(1 of 20);
     }
     }
-    .header-nav{
+    .site-nav{
         @include breakpoint($tablet){
         @include span(6 at 2 of 20);
         }
@@ -65,28 +66,9 @@ header{
 /*End header layout  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
 /*Start home-page layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-.movies-lists{
+
     
-    ul{
-        li{
-            &:nth-of-type(1){
-                @include span(1 of 5);
-            }
-            &:nth-of-type(2){
-                @include span(1 at 2 of 5);
-            }
-            &:nth-of-type(3){
-                @include span(1 at 3 of 5);
-            }
-            &:nth-of-type(4){
-                @include span(1 at 4 of 5);
-            }
-            &:nth-of-type(5){
-                @include span(1 at 5 of 5);
-            }
-        }
-    }
-}
+   
 
 /*End home-page layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
@@ -94,9 +76,7 @@ header{
 /*Start movies layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 .movie-sort{
     
-    div{
-        
-        &:first-child{
+        h3{
             @include span(1 of 2);
             @include breakpoint($tablet){
                 @include span(1 of 3);
@@ -106,7 +86,7 @@ header{
             }
             
         }
-        &:last-child{
+        .movie-sort-selects{
             @include span(1 at 2 of 2);
             @include breakpoint($tablet){
                 @include span(1 at 3 of 3);
@@ -115,13 +95,23 @@ header{
                 @include span(1 at 4 of 4);
             }
         }
-    }
 }
+
+.movies-list{
+        li{
+            @include breakpoint($tablet){
+            @include gallery(1 of 3);
+            }
+            @include breakpoint($laptop){
+            @include gallery(1 of 5);
+            }
+        }   
+    }
 
 /*End movies layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
 
-/*Start movies layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*Start movies-details layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
 .movie-details{
     
@@ -182,14 +172,13 @@ header{
     
 }
 
-/*End movies layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*End movies-details layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
 
 /*Start series-details layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 .series-sort{
-    div{
-        
-        &:first-child{
+    
+        h3{
             @include span(1 of 2);
             @include breakpoint($tablet){
                 @include span(1 of 3);
@@ -198,7 +187,7 @@ header{
                 @include span(1 of 4);
             }
         }
-        &:last-child{
+        select{
             @include span(1 at 2 of 2);
             @include breakpoint($tablet){
                 @include span(1 at 3 of 3);
@@ -206,7 +195,6 @@ header{
             @include breakpoint($laptop){
                 @include span(1 at 4 of 4);
             }
-        }
     }
 }
 
@@ -224,45 +212,36 @@ header{
             }
             .series-team{
                 
-                .cast{
-                    
-                    
-                    ul{
-                        &:first-child{
-                            @include span(1 of 2);
-                        }
-                        &:nth-child(2){
-                            @include span(1 at 2 of 2);
-                        }
-                    }
+                .series-cast, .series-producers, .series-directors{
                     @include breakpoint($tablet){
                         @include span(1 of 2);
                     }
-                }
-                
-                .producers{
                     
                     ul{
-                        &:first-child{
+                        &:nth-of-type(1){
                             @include span(1 of 2);
                         }
-                        &:nth-child(2){
+                        &:nth-of-type(2){
                             @include span(1 at 2 of 2);
                         }
                     }
+                    
+                }
+                
+                .series-producers{
+                    @include breakpoint($tablet){
+                        @include span(1 at 2 of 2);
+                    }
+                    
                     @include breakpoint($tablet){
                         @include span(1 at 2 of 2);
                     }
                 }
-                .directors{
-                    ul{
-                        &:first-child{
-                            @include span(1 of 2);
-                        }
-                        &:nth-child(2){
-                            @include span(1 at 2 of 2);
-                        }
+                .series-directors{
+                    @include breakpoint($tablet){
+                        @include span(1 of 2);
                     }
+                    
                     @include breakpoint($tablet){
                         @include span(1  at 1 of 2);
                     }
@@ -278,28 +257,6 @@ header{
         }
     }
     
-.related-titles{
-    
-    ul{
-        li{
-            &:nth-of-type(1){
-                @include span(1 of 5);
-            }
-            &:nth-of-type(2){
-                @include span(1 at 2 of 5);
-            }
-            &:nth-of-type(3){
-                @include span(1 at 3 of 5);
-            }
-            &:nth-of-type(4){
-                @include span(1 at 4 of 5);
-            }
-            &:nth-of-type(5){
-                @include span(1 at 5 of 5);
-            }
-        }
-    }
-}
 
     
 
@@ -308,132 +265,7 @@ header{
 
 /*Start base-elements layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
-.base-elements{
-    
-    .elements-title{
-        @include container($main-width);
-        
-        img{
-            @include breakpoint($tablet){
-            @include span(1 of 2);
-            }
-        }
-        div{
-            @include breakpoint($tablet){
-            @include span(1 at 2 of 2);
-            }
-        }
-    }
-    .elements-selects{
-        ul{
-            li{
-                
-                &:first-child{
-                    @include breakpoint($tablet){
-                    @include span(1 of 3);
-                    }
-                    @include breakpoint($laptop){
-                    @include span(1 of 4);
-                    }
-                    
-                }
-                &:nth-child(2){
-                    @include breakpoint($tablet){
-                    @include span(1 at 2 of 3);
-                    }
-                    @include breakpoint($laptop){
-                    @include span(1 at 2 of 4);
-                    }
-                }
-                &:nth-child(3){
-                    @include breakpoint($tablet){
-                    @include span(1 at 3 of 3);
-                    }
-                    @include breakpoint($laptop){
-                    @include span(1 at 3 of 4);
-                    }
-                }
-                &:last-child{
-                    @include breakpoint($tablet){
-                    @include span(1 of 3);
-                    }
-                    @include breakpoint($laptop){
-                    @include span(1 at 4 of 4);
-                    }
-                    
-                }
-                
-            }
-        }
-    }
-    .elements-forms{
-        ul{
-            li{
-                &:first-child{
-                    @include breakpoint($tablet){
-                    @include span(1 of 2);
-                    }
-                    @include breakpoint($laptop){
-                    @include span(1 of 4);
-                    }
-                }
-                &:nth-child(2){
-                    @include breakpoint($tablet){
-                    @include span(1 at 2 of 2);
-                    }
-                    @include breakpoint($laptop){
-                    @include span(1 at 2 of 4);
-                    }
-                }
-                &:nth-child(3){
-                    @include breakpoint($tablet){
-                    @include span(1 of 2);
-                    }
-                    @include breakpoint($laptop){
-                    @include span(1 at 3 of 4);
-                    }
-                }
-                &:last-child{
-                    @include breakpoint($tablet){
-                    @include span(1 at 2 of 2);
-                    }
-                    @include breakpoint($laptop){
-                    @include span(1 at 4 of 4);
-                    }
-                    
-                }
-                
-            }
-        }
-    }
-    .elements-buttons{
-        ul{
-            li{
-                &:first-child{
-                    @include breakpoint($laptop){
-                    @include span(1 of 4);
-                    }
-                }
-                &:nth-child(2){
-                    @include breakpoint($laptop){
-                    @include span(1 at 2 of 4);
-                    }
-                }
-                &:nth-child(3){
-                    @include breakpoint($laptop){
-                    @include span(2 at 3 of 4);
-                    }
-                }
-                
-                
-            }
-        }
-    }
-    .heading-sizes{
-        @include container($main-width);
-    }
-    
-}
+
 
 
 /*End base-elements layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
@@ -441,7 +273,7 @@ header{
 /*Start footer layout @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
 .footer{
-    div{
+    .footer-links, .social-media, .copyright{
     @include container($main-width);
     }
 }

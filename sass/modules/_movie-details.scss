@@ -1,91 +1,178 @@
 .movie-details{
-    height: 930px;
-    @include breakpoint($tablet){
-        height: 450px;   
-    }
     padding: 20px;
-    font-size: 12px;
-    @include breakpoint($tablet){
-        font-size: 8px;  
-    }
-    @include breakpoint($laptop){
-        font-size: 7px;  
-    }
+    background-color: transparent;
     color: $primary-fcolor;
-    background-color: $fourth-fcolor;
-    
-    .movie-video{
-    img{
-        width: 285px;
-        @include breakpoint($tablet){
-            width: 370px;
-        }
-        @include breakpoint($laptop){
-            width: 500px;
-        }
-        @include breakpoint($desktop){
-            width: 550px;
-        }
-    }
-    h3{
-        margin: 6px auto;
-        font-size: 12px;
-    }
-}
-    .movie-description{
-        img{
-            
-        }
-        h1{
-            font-size: 20px;
-        }
-        p{
-            font-size: 9px;
-        }
-        span{
-            font-size: 11px;
-            color: grey;
-        }
-        .movie-buttons{
-            
-            button{
-                background-color: grey;
-                padding: 5px;
-                margin: 10px 5px;
-                width: 100px;
-                border: none;
-                a{
-                    color: $primary-fcolor;
+    overflow: hidden;
+
+        
+        .movie-video{
+            img{
+                width: 285px;
+                @include breakpoint($tablet){
+                    width: 370px;
+                }
+                @include breakpoint($laptop){
+                    width: 500px;
+                }
+                @include breakpoint($desktop){
+                    width: 600px;
+                }
+            }
+            h3{
+                margin: 6px auto;
+                font-size: 12px;
+                
+            }
+            .movie-team, .movie-producers, .movie-directors{
+                ul{
+                    li{
+                        color: $sixth-fcolor;
+                        font-size: 10px;
+                        @include breakpoint($tablet){
+                            font-size: 8px;
+                        }
+                        @include breakpoint($laptop){
+                            font-size: 7px;
+                        }
+                            @include breakpoint($desktop){
+                            font-size: 9px;
+                        }
+                    }
+                }
+                ul:nth-of-type(1){
+                    li{
+                        font-weight: bold;
+                        color: $primary-fcolor;
+                    }
                 }
             }
         }
-        .movie-social{
-                a{
-                    i{
-                        color: grey;
-                        border: solid 1px grey;
-                        border-radius: 50%;
-                        padding: 10px;
-                    }
-                    &:first-child{
-                        i{
-                            padding: 10px 12px;
-                            &:hover{
-                                color: #7654ff;
-                                border: solid 1px #7654ff;
-                            }
-                        }
-                    }
-                    &:last-child{
-                        i{
-                            
-                            &:hover{
-                                color: #29c5f6;
-                                border: solid 1px #29c5f6;
-                            }
-                            }
-                        }
-                    }
+    
+        .movie-description{
+            h1, p, span{
+                margin: 10px 0px;
             }
-    }
+            img{
+                width: 250px;
+                @include breakpoint($tablet){
+                    width: 320px;
+                }
+                @include breakpoint($laptop){
+                    width: 420px;
+                }
+                @include breakpoint($desktop){
+                    width: 530px;
+                }
+            }
+            h1{
+                font-size: 20px;
+            }
+            
+            p{
+                font-size: 10px;
+                width: 250px;
+                @include breakpoint($tablet){
+                    width: 250px;
+                }
+                @include breakpoint($laptop){
+                    width: 350px;
+                }
+                @include breakpoint($desktop){
+                    width: 460px;
+                }
+            }
+            span{
+                font-size: 11px;
+                color: grey;
+            }
+            .movie-buttons{
+
+                button{
+                    background-color: grey;
+                    padding: 5px;
+                    margin: 10px 5px;
+                    width: 100px;
+                    border: none;
+                    a{
+                        color: $primary-fcolor;
+                    }
+                    &:hover{
+                        background-color: $primary-fcolor;
+                        a{
+                            color: $sec-fcolor;
+                        }
+                    }
+                }
+            }
+            .movie-social{
+                    a{
+                        i{
+                            color: grey;
+                            border: solid 1px grey;
+                            border-radius: 50%;
+                            padding: 10px;
+                        }
+                        &:first-child{
+                            i{
+                                padding: 10px 12px;
+                                &:hover{
+                                    color: #7654ff;
+                                    border: solid 1px #7654ff;
+                                }
+                            }
+                        }
+                        &:last-child{
+                            i{
+
+                                &:hover{
+                                    color: #29c5f6;
+                                    border: solid 1px #29c5f6;
+                                }
+                                }
+                            }
+                        }
+                }
+        }
 }
+
+.similar-titles{
+    
+    hr{
+        width: 97%;
+        height: 1px;
+        border: none;
+        background-color: #363636;
+    }
+    h5{
+            padding: 10px 0px 0px 20px;
+            font-size: 12px;
+            color: $sixth-fcolor;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

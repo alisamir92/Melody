@@ -1,41 +1,104 @@
-.movies-lists{
-    padding: 20px;
-    background-color: $fourth-fcolor;
+.page-content{
+    
     color: $primary-fcolor;
-    font-size: 7px;
-    @include breakpoint($tablet){
-        height: 1050px;
-        font-size: 10px;
+
+    .owl-main, .home-slider{
+
+        position: relative;
+        .owl-dots{
+            display: none;
+        }
+        .owl-nav{
+            color: #c4c2c2;
+            padding: 25px;
+            position: absolute;
+            width: 100%;
+            top: 5%;
+            @include breakpoint($tablet){
+                top: 30%;
+            }
+            @include breakpoint($laptop){
+                top: 35%;
+            }
+            .owl-next{
+                float: right;
+                background-color: transparent;
+            }
+            .owl-prev{
+                float: left;
+                background-color: transparent;
+            }
+        }
     }
     
-    ul{
-        height: 100px;
-        margin: 10px;
-        @include breakpoint($tablet){
-                    height: 200px;
-                    
-                }
-        div{
-            color: grey;
-            margin-bottom: 5px;
-        }
-        li{
-            img{
-                width: 50px;
-                height: 50px;
+    .home-slider{
+        
+        
+        .owl-nav{
+            
+            padding: 0px;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0%;
+            .owl-next, .owl-prev{
+                height: 86%;
                 @include breakpoint($tablet){
-                    width: 140px;
-                    height: 100px;
+                    height: 90%;
                 }
                 @include breakpoint($laptop){
-                    width: 190px;
-                    height: auto;
+                    height: 81%;
                 }
                 @include breakpoint($desktop){
-                    width: 220px;
-                    height: auto;
+                    height: 86%;
+                }
+                
+                padding-top: 50px;
+                @include breakpoint($tablet){
+                    padding-top: 80px;
+                }
+                @include breakpoint($laptop){
+                    padding-top: 30px;
+                }
+                @include breakpoint($desktop){
+                    padding-top: 45px;
+                }
+                padding-right: 5px;
+                padding-left: 5px;
+                &:hover{
+                    background-color: $sec-fcolor;
+                    opacity: 0.5;
                 }
             }
         }
     }
+
+    .home-page-lists{
+        padding: 20px;
+        background-color: transparent;
+        
+        h5{
+            color: $sixth-fcolor;
+            font-size: 12px;
+        }
+        
+        h3{
+            font-size: 12px;
+        }
+        
+        
+    }
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+

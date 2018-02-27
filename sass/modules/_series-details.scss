@@ -3,14 +3,14 @@
     height: 60px;
     color: $primary-fcolor;
     background-color: $fifth-fcolor;
-    div{
-        text-align: center;
+    h3{
+        
         font-size: 8px;
         @include breakpoint($tablet){
             font-size: 10px;
         }
     }
-    select{
+    .plus{
         background-color: $sec-fcolor;
         border: none;
         padding: 5px;
@@ -22,24 +22,28 @@
             width: 200px;
         }
         -webkit-appearance: none;
-        -moz-appearance: none;
-        -o-appearance: none;
-        -ms-appearance: none;
-        appearance: none;
         background: $sec-fcolor url("img/plus.png") no-repeat 95% 50%;
-    
-    
-        
     }
+    .minus{
+            background-color: $sec-fcolor;
+            border: none;
+            padding: 5px;
+            font-size: 10px;
+            margin-right: 5px;
+            color: $primary-fcolor;
+            width: 80px;
+            @include breakpoint($tablet){
+                width: 200px;
+            }
+            -webkit-appearance: none;
+            background: $sec-fcolor url("img/minus.png") no-repeat 95% 50%;
+            }
 }
 
 .series{
-    height: 1330px;
-    @include breakpoint($tablet){
-        height: 830px;
-    }
+    overflow: hidden;
     padding: 20px;
-    background-color: $sec-fcolor;
+    background-color: transparent;
     color: $primary-fcolor;
         .ep{
             
@@ -88,78 +92,39 @@
         }
             
             .series-team{
-                font-size: 15px;
-                @include breakpoint($tablet){
-                    font-size: 10px;
+                .series-cast, .series-producers, .series-directors{
+                ul{
+                    li{
+                        color: $sixth-fcolor;
+                        font-size: 10px;
+                        @include breakpoint($tablet){
+                            font-size: 8px;
+                        }
+                        @include breakpoint($laptop){
+                            font-size: 7px;
+                        }
+                            @include breakpoint($desktop){
+                            font-size: 9px;
+                        }
+                    }
+                    &:nth-of-type(1){
+                    li{
+                        font-weight: bold;
+                        color: $primary-fcolor;
+                    }
                 }
-                @include breakpoint($laptop){
-                    font-size: 11px;
                 }
                 
-                .cast{
-                    
-                    margin-bottom: 30px;
-                    
-                    
-                }
-                
-                .producers{
-                    margin-bottom: 30px;
-                    
-                }
-                .directors{
-                    
-                }
-                
-                
-        }
-        }
-        .series-adv{
-            
-        }
-    
-
-.related-titles{
-    padding: 20px;
-    background-color: $fourth-fcolor;
-    color: $primary-fcolor;
-    font-size: 7px;
-    @include breakpoint($tablet){
-       
-        font-size: 10px;
-    }
-    
-    ul{
-        height: 100px;
-        margin: 10px;
-        @include breakpoint($tablet){
-                    height: 200px;
-                    
-                }
-        div{
-            color: grey;
-            margin-bottom: 5px;
-        }
-        li{
-            img{
-                width: 50px;
-                height: 50px;
-                @include breakpoint($tablet){
-                    width: 140px;
-                    height: 100px;
-                }
-                @include breakpoint($laptop){
-                    width: 190px;
-                    height: auto;
-                }
-                @include breakpoint($desktop){
-                    width: 220px;
-                    height: auto;
-                }
+                h3{
+                    margin: 6px auto;
+                    font-size: 12px; 
+            }
             }
         }
-    }
+        
 }
+
+
 
 
 

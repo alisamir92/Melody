@@ -1,0 +1,164 @@
+$susy: (
+  columns: 12,
+  gutters: 0.2,
+  //gutter-position: inside,
+  global-box-sizing: border-box,
+  flow: susy-get(flow)
+  //output: isolate
+);
+/*break points*/
+$bp-mobile: 320px; 
+$bp-tablet: 600px;
+$bp-desktop: 780px;
+
+$main-width: 940px;
+
+
+header{
+    .search-form{
+        
+        
+        .search-icon{
+            
+            @include span(1 of 10);
+            
+        }
+        .header-search{
+            @include span(9 at 2 of 10);
+            float: right;
+            margin-top: 7px;
+        }
+        
+    }
+}
+
+
+.plus{
+        background-color: $sec-fcolor;
+        padding: 5px;
+        font-size: 9px;
+        margin-right: 5px;
+        margin-bottom: 3px;
+        color: $primary-fcolor;
+        width: 80px;
+        @include breakpoint($tablet){
+            width: 90px;
+            margin-bottom: 0px;
+        }
+        -webkit-appearance: none;
+        background: $sec-fcolor url("img/plus.png") no-repeat 5% 50% !important;
+    }
+
+.minus{
+        background-color: $sec-fcolor;
+        
+        padding: 5px;
+        font-size: 9px;
+        margin-right: 5px;
+        margin-bottom: 3px;
+        color: $primary-fcolor;
+        width: 80px;
+        @include breakpoint($tablet){
+            width: 90px;
+            margin-bottom: 0px;
+        }
+        -webkit-appearance: none;
+        background: $sec-fcolor url("img/minus.png") no-repeat 5% 50% !important;
+    }
+
+.movie-sort{
+    padding-right: 70px !important;
+}
+
+.similar-titles{
+    h5{
+        padding-right: 70px !important;
+    }
+}
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+.base-elements{
+    
+    .elements-selects{
+        
+        .en-ar{
+                font-size: 8px ;
+                height: 20px ;
+                width: 80px ;
+                -webkit-appearance: none;
+                padding: 2px;
+
+                color: $primary-fcolor;
+                background: $sec-fcolor url("img/plus.png") no-repeat 5% 50% !important;
+
+                option{
+                    background-color: $sixth-fcolor;
+
+                }
+            }
+       
+        .minus-en-ar{
+                font-size: 8px ;
+                height: 20px ;
+                width: 80px ;
+                -webkit-appearance: none;
+                padding: 2px;
+
+                color: $primary-fcolor;
+                background: $sec-fcolor url("img/minus.png") no-repeat 5% 50% !important;
+
+                option{
+                    background-color: $sixth-fcolor;
+
+                }
+        }
+    }
+    
+    .elements-forms{
+        .active{
+            .active-with-button{
+    
+                button{
+                    
+                    right: 168px !important;
+                    
+                }
+                
+            }   
+        }
+        
+        .correct{
+            .correct-with-button{
+                
+                button{
+                   
+                    right: 128px !important;
+                    
+                }
+            }
+        }
+        
+        .error{
+            .error-with-button{
+                
+                button{
+                   
+                    right: 168px !important;
+                    
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,7 +1,7 @@
 /*
-Theme Name: zumra
-Theme URI: http://mohamadelbialy.com/zumra
-Description: Theme for zumrafood.com.
+Theme Name: eatright
+Theme URI: http://mohamadelbialy.com/eatright
+Description: Theme for eatrightfood.com.
 Author: Mohamed Elbialy
 Author URI: http://mohamadelbialy.com
 */
@@ -11,50 +11,50 @@ Author URI: http://mohamadelbialy.com
 @media (min-width: 768px) {
   header img {
     width: 4.2016806723%;
-    float: left;
-    margin-right: 0.8403361345%; } }
+    float: right;
+    margin-left: 0.8403361345%; } }
 
 @media (min-width: 768px) {
   header .site-nav {
     width: 29.4117647059%;
-    float: left;
-    margin-right: 0.8403361345%; } }
+    float: right;
+    margin-left: 0.8403361345%; } }
 
 @media (min-width: 768px) {
   header .site-nav li {
     width: 12.1951219512%;
-    float: left;
-    margin-right: 2.4390243902%; } }
+    float: right;
+    margin-left: 2.4390243902%; } }
 
 @media (min-width: 768px) {
   header .search-form {
     width: 29.4117647059%;
-    float: left;
-    margin-right: 0.8403361345%; } }
+    float: right;
+    margin-left: 0.8403361345%; } }
 
 @media (min-width: 768px) {
   header .profile-nav {
     width: 29.4117647059%;
-    float: right;
-    margin-right: 0; } }
+    float: left;
+    margin-left: 0; } }
 
 @media (min-width: 768px) {
   header .profile-nav li:first-child {
     width: 21.7391304348%;
-    float: left;
-    margin-right: 4.347826087%; }
+    float: right;
+    margin-left: 4.347826087%; }
   header .profile-nav li:nth-child(2) {
     width: 21.7391304348%;
-    float: left;
-    margin-right: 4.347826087%; }
+    float: right;
+    margin-left: 4.347826087%; }
   header .profile-nav li:nth-child(3) {
     width: 21.7391304348%;
-    float: left;
-    margin-right: 4.347826087%; }
+    float: right;
+    margin-left: 4.347826087%; }
   header .profile-nav li:last-child {
     width: 21.7391304348%;
-    float: right;
-    margin-right: 0; } }
+    float: left;
+    margin-left: 0; } }
 
 /*End header layout  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 /*Start home-page layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
@@ -62,76 +62,76 @@ Author URI: http://mohamadelbialy.com
 /*Start movies layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 .movie-sort h3 {
   width: 45.4545454545%;
-  float: left;
-  margin-right: 9.0909090909%; }
+  float: right;
+  margin-left: 9.0909090909%; }
   @media (min-width: 768px) {
     .movie-sort h3 {
       width: 29.4117647059%;
-      float: left;
-      margin-right: 5.8823529412%; } }
+      float: right;
+      margin-left: 5.8823529412%; } }
   @media (min-width: 1000px) {
     .movie-sort h3 {
       width: 21.7391304348%;
-      float: left;
-      margin-right: 4.347826087%; } }
+      float: right;
+      margin-left: 4.347826087%; } }
 
 .movie-sort .movie-sort-selects {
   width: 45.4545454545%;
-  float: right;
-  margin-right: 0; }
+  float: left;
+  margin-left: 0; }
   @media (min-width: 768px) {
     .movie-sort .movie-sort-selects {
       width: 29.4117647059%;
-      float: right;
-      margin-right: 0; } }
+      float: left;
+      margin-left: 0; } }
   @media (min-width: 1000px) {
     .movie-sort .movie-sort-selects {
       width: 21.7391304348%;
-      float: right;
-      margin-right: 0; } }
+      float: left;
+      margin-left: 0; } }
 
 @media (min-width: 768px) {
   .movies-list li {
     width: 29.4117647059%;
-    float: left; }
+    float: right; }
     .movies-list li:nth-child(3n + 1) {
-      margin-left: 0;
-      margin-right: -100%;
+      margin-right: 0;
+      margin-left: -100%;
       clear: both;
-      margin-left: 0; }
+      margin-right: 0; }
     .movies-list li:nth-child(3n + 2) {
-      margin-left: 35.2941176471%;
-      margin-right: -100%;
+      margin-right: 35.2941176471%;
+      margin-left: -100%;
       clear: none; }
     .movies-list li:nth-child(3n + 3) {
-      margin-left: 70.5882352941%;
-      margin-right: -100%;
+      margin-right: 70.5882352941%;
+      margin-left: -100%;
       clear: none; } }
 
 @media (min-width: 1000px) {
   .movies-list li {
     width: 17.2413793103%;
-    float: left; }
+    float: right; }
     .movies-list li:nth-child(5n + 1) {
-      margin-left: 0;
-      margin-right: -100%;
+      margin-right: 0;
+      margin-left: -100%;
       clear: both;
-      margin-left: 0; }
+      margin-right: 0; }
     .movies-list li:nth-child(5n + 2) {
-      margin-left: 20.6896551724%;
-      margin-right: -100%;
+      margin-right: 20.6896551724%;
+      margin-left: -100%;
       clear: none; }
     .movies-list li:nth-child(5n + 3) {
-      margin-left: 41.3793103448%;
-      margin-right: -100%;
+      margin-right: 41.3793103448%;
+      margin-left: -100%;
       clear: none; }
     .movies-list li:nth-child(5n + 4) {
-      margin-left: 62.0689655172%;
-      margin-right: -100%;
+      margin-right: 62.0689655172%;
+      margin-left: -100%;
       clear: none; }
     .movies-list li:nth-child(5n + 5) {
-      margin-left: 82.7586206897%;
-      margin-right: -100%;
+      margin-right: 82.7586206897%;
+      margin-left: -100%;
       clear: none; } }
 
 /*End movies layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
@@ -139,150 +139,150 @@ Author URI: http://mohamadelbialy.com
 @media (min-width: 768px) {
   .movie-details .movie-video {
     width: 45.4545454545%;
-    float: left;
-    margin-right: 9.0909090909%; } }
+    float: right;
+    margin-left: 9.0909090909%; } }
 
 .movie-details .movie-video .movie-team ul:nth-of-type(1) {
   width: 45.4545454545%;
-  float: left;
-  margin-right: 9.0909090909%; }
+  float: right;
+  margin-left: 9.0909090909%; }
 
 .movie-details .movie-video .movie-team ul:nth-of-type(2) {
   width: 45.4545454545%;
-  float: right;
-  margin-right: 0; }
+  float: left;
+  margin-left: 0; }
 
 @media (min-width: 768px) {
   .movie-details .movie-video .movie-team .movie-cast {
     width: 45.4545454545%;
-    float: left;
-    margin-right: 9.0909090909%; } }
+    float: right;
+    margin-left: 9.0909090909%; } }
 
 @media (min-width: 1000px) {
   .movie-details .movie-video .movie-team .movie-cast {
     width: 29.4117647059%;
-    float: left;
-    margin-right: 5.8823529412%; } }
+    float: right;
+    margin-left: 5.8823529412%; } }
 
 @media (min-width: 768px) {
   .movie-details .movie-video .movie-team .movie-producers {
     width: 45.4545454545%;
-    float: right;
-    margin-right: 0; } }
+    float: left;
+    margin-left: 0; } }
 
 @media (min-width: 1000px) {
   .movie-details .movie-video .movie-team .movie-producers {
     width: 29.4117647059%;
-    float: left;
-    margin-right: 5.8823529412%; } }
+    float: right;
+    margin-left: 5.8823529412%; } }
 
 @media (min-width: 768px) {
   .movie-details .movie-video .movie-team .movie-directors {
     width: 45.4545454545%;
-    float: left;
-    margin-right: 9.0909090909%; } }
+    float: right;
+    margin-left: 9.0909090909%; } }
 
 @media (min-width: 1000px) {
   .movie-details .movie-video .movie-team .movie-directors {
     width: 29.4117647059%;
-    float: right;
-    margin-right: 0; } }
+    float: left;
+    margin-left: 0; } }
 
 @media (min-width: 768px) {
   .movie-details .movie-description {
     width: 45.4545454545%;
-    float: right;
-    margin-right: 0; } }
+    float: left;
+    margin-left: 0; } }
 
 /*End movies-details layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 /*Start series-details layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 .series-sort h3 {
   width: 45.4545454545%;
-  float: left;
-  margin-right: 9.0909090909%; }
+  float: right;
+  margin-left: 9.0909090909%; }
   @media (min-width: 768px) {
     .series-sort h3 {
       width: 29.4117647059%;
-      float: left;
-      margin-right: 5.8823529412%; } }
+      float: right;
+      margin-left: 5.8823529412%; } }
   @media (min-width: 1000px) {
     .series-sort h3 {
       width: 21.7391304348%;
-      float: left;
-      margin-right: 4.347826087%; } }
+      float: right;
+      margin-left: 4.347826087%; } }
 
 .series-sort select {
   width: 45.4545454545%;
-  float: right;
-  margin-right: 0; }
+  float: left;
+  margin-left: 0; }
   @media (min-width: 768px) {
     .series-sort select {
       width: 29.4117647059%;
-      float: right;
-      margin-right: 0; } }
+      float: left;
+      margin-left: 0; } }
   @media (min-width: 1000px) {
     .series-sort select {
       width: 21.7391304348%;
-      float: right;
-      margin-right: 0; } }
+      float: left;
+      margin-left: 0; } }
 
 @media (min-width: 768px) {
   .series .ep {
     width: 21.7391304348%;
-    float: left;
-    margin-right: 4.347826087%; } }
+    float: right;
+    margin-left: 4.347826087%; } }
 
 @media (min-width: 768px) {
   .series .series-details {
     width: 47.8260869565%;
-    float: left;
-    margin-right: 4.347826087%; } }
+    float: right;
+    margin-left: 4.347826087%; } }
 
 @media (min-width: 768px) {
   .series .series-details .series-team .series-cast, .series .series-details .series-team .series-producers, .series .series-details .series-team .series-directors {
     width: 45.4545454545%;
-    float: left;
-    margin-right: 9.0909090909%; } }
+    float: right;
+    margin-left: 9.0909090909%; } }
 
 .series .series-details .series-team .series-cast ul:nth-of-type(1), .series .series-details .series-team .series-producers ul:nth-of-type(1), .series .series-details .series-team .series-directors ul:nth-of-type(1) {
   width: 45.4545454545%;
-  float: left;
-  margin-right: 9.0909090909%; }
+  float: right;
+  margin-left: 9.0909090909%; }
 
 .series .series-details .series-team .series-cast ul:nth-of-type(2), .series .series-details .series-team .series-producers ul:nth-of-type(2), .series .series-details .series-team .series-directors ul:nth-of-type(2) {
   width: 45.4545454545%;
-  float: right;
-  margin-right: 0; }
+  float: left;
+  margin-left: 0; }
 
 @media (min-width: 768px) {
   .series .series-details .series-team .series-producers {
     width: 45.4545454545%;
-    float: right;
-    margin-right: 0; } }
+    float: left;
+    margin-left: 0; } }
 
 @media (min-width: 768px) {
   .series .series-details .series-team .series-producers {
     width: 45.4545454545%;
+    float: left;
+    margin-left: 0; } }
+
+@media (min-width: 768px) {
+  .series .series-details .series-team .series-directors {
+    width: 45.4545454545%;
     float: right;
-    margin-right: 0; } }
+    margin-left: 9.0909090909%; } }
 
 @media (min-width: 768px) {
   .series .series-details .series-team .series-directors {
     width: 45.4545454545%;
-    float: left;
-    margin-right: 9.0909090909%; } }
-
-@media (min-width: 768px) {
-  .series .series-details .series-team .series-directors {
-    width: 45.4545454545%;
-    float: left;
-    margin-right: 9.0909090909%; } }
+    float: right;
+    margin-left: 9.0909090909%; } }
 
 @media (min-width: 768px) {
   .series .series-adv {
     width: 21.7391304348%;
-    float: right;
-    margin-right: 0; } }
+    float: left;
+    margin-left: 0; } }
 
 /*End series-details layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 /*Start base-elements layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
@@ -298,6 +298,86 @@ Author URI: http://mohamadelbialy.com
     clear: both; }
 
 /*End footer layout @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*break points*/
+header .search-form .search-icon {
+  width: 8.4745762712%;
+  float: right;
+  margin-left: 1.6949152542%; }
+
+header .search-form .header-search {
+  width: 89.8305084746%;
+  float: left;
+  margin-left: 0;
+  float: right;
+  margin-top: 7px; }
+
+.plus {
+  background-color: #141414;
+  padding: 5px;
+  font-size: 9px;
+  margin-right: 5px;
+  margin-bottom: 3px;
+  color: #fff;
+  width: 80px;
+  -webkit-appearance: none;
+  background: #141414 url("img/plus.png") no-repeat 5% 50% !important; }
+  @media (min-width: 768px) {
+    .plus {
+      width: 90px;
+      margin-bottom: 0px; } }
+
+.minus {
+  background-color: #141414;
+  padding: 5px;
+  font-size: 9px;
+  margin-right: 5px;
+  margin-bottom: 3px;
+  color: #fff;
+  width: 80px;
+  -webkit-appearance: none;
+  background: #141414 url("img/minus.png") no-repeat 5% 50% !important; }
+  @media (min-width: 768px) {
+    .minus {
+      width: 90px;
+      margin-bottom: 0px; } }
+
+.movie-sort {
+  padding-right: 70px !important; }
+
+.similar-titles h5 {
+  padding-right: 70px !important; }
+
+.base-elements .elements-selects .en-ar {
+  font-size: 8px;
+  height: 20px;
+  width: 80px;
+  -webkit-appearance: none;
+  padding: 2px;
+  color: #fff;
+  background: #141414 url("img/plus.png") no-repeat 5% 50% !important; }
+  .base-elements .elements-selects .en-ar option {
+    background-color: #a7a7a7; }
+
+.base-elements .elements-selects .minus-en-ar {
+  font-size: 8px;
+  height: 20px;
+  width: 80px;
+  -webkit-appearance: none;
+  padding: 2px;
+  color: #fff;
+  background: #141414 url("img/minus.png") no-repeat 5% 50% !important; }
+  .base-elements .elements-selects .minus-en-ar option {
+    background-color: #a7a7a7; }
+
+.base-elements .elements-forms .active .active-with-button button {
+  right: 168px !important; }
+
+.base-elements .elements-forms .correct .correct-with-button button {
+  right: 128px !important; }
+
+.base-elements .elements-forms .error .error-with-button button {
+  right: 168px !important; }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -778,7 +858,7 @@ header {
     color: white; }
   .login-form label, .login-form input {
     display: block;
-    max-width: 800px;
+    max-width: 940px;
     margin-left: auto;
     margin-right: auto; }
     .login-form label:after, .login-form input:after {
@@ -1419,4 +1499,4 @@ header {
   .footer .social-media a:last-child i:hover {
     color: #29c5f6; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=rtl.css.map */

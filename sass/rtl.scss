@@ -7,23 +7,23 @@ Author URI: http://mohamadelbialy.com
 */
 
 // Import external files
-@import "susy";
-@import "breakpoint";
+@import "bower_components/susy";
+@import "bower_components/breakpoint";
 @import "mixins/variables";
 
 $susy: (flow: rtl);
 @import "layout/layout";
-
-
-
+@import "layout/layout-rtl";
 @import "base/resets";
 @import "base/base";
-
 @import "modules/header";
-
-
-
-
+@import "modules/home-page";
+@import "modules/movies";
+@import "modules/movie-details";
+@import "modules/series-details";
+@import "modules/login-form";
+@import "modules/about-us";
+@import "modules/base-elements";
 @import "modules/footer";
 
 

@@ -1,20 +1,25 @@
 .movie-sort{
     padding: 20px;
+    color: $primary-fcolor;
+    background-color: $fifth-fcolor;
     height: 80px;
     
     @include breakpoint($tablet){
         height: 60px;
     }
-    color: $primary-fcolor;
-    background-color: $fifth-fcolor;
-    div{
+    
+    
+    h3{
+        font-size: 10px;
+    }
+    p{
         text-align: center;
         font-size: 8px;
         @include breakpoint($tablet){
             font-size: 10px;
         }
     }
-    select{
+    .plus{
         background-color: $sec-fcolor;
         border: none;
         padding: 5px;
@@ -26,6 +31,41 @@
         @include breakpoint($tablet){
             width: 90px;
             margin-bottom: 0px;
+        }
+        -webkit-appearance: none;
+        background: $sec-fcolor url("img/plus.png") no-repeat 95% 50%;
+    }
+    .minus{
+        background-color: $sec-fcolor;
+        border: none;
+        padding: 5px;
+        font-size: 9px;
+        margin-right: 5px;
+        margin-bottom: 3px;
+        color: $primary-fcolor;
+        width: 80px;
+        @include breakpoint($tablet){
+            width: 90px;
+            margin-bottom: 0px;
+        }
+        -webkit-appearance: none;
+        background: $sec-fcolor url("img/minus.png") no-repeat 95% 50%;
+    }
+}
+
+.movies-list{
+    overflow: hidden;
+    color: $primary-fcolor;
+    padding: 20px;
+    li{
+        text-align: center;
+        @include breakpoint($tablet){
+            text-align: left;
+        }
+        margin-bottom: 10px;
+        h3{
+            margin-top: -12px;
+            font-size: 10px;
         }
     }
 }

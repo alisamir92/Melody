@@ -1,6 +1,7 @@
 /*Start Adv. @@@@@@@@@@@@@@@@@@@@@@*/
 .adv{
     text-align: center;
+    background-color: $fourth-fcolor;
     img{
         width: 300px;
         @include breakpoint($tablet){
@@ -13,7 +14,7 @@
 
 /*Start header @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 header{
-    padding: 5px;
+    padding: 5px 20px;
     text-align: center;
     color: $primary-fcolor;
     background-color: $sec-fcolor;
@@ -36,7 +37,7 @@ header{
             
         }
     }
-    .header-nav{
+    .site-nav{
         @include breakpoint($tablet){
         margin-top: 15px;
         font-size: 8px;
@@ -50,11 +51,14 @@ header{
         text-align: left;
         margin-top: 8px;
     }
-        input{
+        .header-search{
+            display: none;
             padding-left: 5px;
-            background-color: black;
+            background-color: $primary-fcolor;
             border: none;
-            color: $primary-fcolor;
+            border-radius: 5px;
+            outline: none;
+            color: $sec-fcolor;
             @include breakpoint($tablet){
                 width: 180px;
             }
