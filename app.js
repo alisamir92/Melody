@@ -107,6 +107,92 @@ $(document).ready(function () {
         $(".header-search").slideToggle();
     });
     
+    
+    //hidden-lists
+    
+    //featured-list@@@@@@@@@@@@@@@@@@@@@@@
+    $(".movie-sort-list .featured").on("mouseenter", function () {
+        $(".featured-list").show();
+        $(".a-z-list, .just-added-list, .top-list").hide();
+    });
+    
+    $(".featured-list").on("mouseleave", function () {
+        $(".featured-list").hide();
+    });
+    
+    $(".featured-list ul li").on("click", function (e) {
+        e.preventDefault();
+        $(".featured-list").hide();
+        $(this).attr("id", "selected");
+        
+        $(".featured").html($("#selected").html());
+        
+    });
+    
+    //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    
+    
+    //a-z-list@@@@@@@@@@@@@@@@@@@@@@@
+    $(".movie-sort-list .a-z").on("mouseenter", function () {
+        $(".a-z-list").show();
+        $(".featured-list, .just-added-list, .top-list").hide();
+    });
+    
+    $(".a-z-list").on("mouseleave", function () {
+        $(".a-z-list").hide();
+    });
+    
+    $(".a-z-list ul li").on("click", function (e) {
+        e.preventDefault();
+        $(".a-z-list").hide();
+        $(this).attr("id", "selected");
+        
+        $(".a-z").html($("#selected").html());
+        
+        
+    });
+    //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    
+    //just-added-list@@@@@@@@@@@@@@@@@@@@@@@
+    $(".movie-sort-list .just-added").on("mouseenter", function () {
+        $(".just-added-list").show();
+        $(".featured-list, .a-z-list, .top-list").hide();
+    });
+    
+    $(".just-added-list").on("mouseleave", function () {
+        $(".just-added-list").hide();
+    });
+    
+    $(".just-added-list ul li").on("click", function (e) {
+        e.preventDefault();
+        $(".just-added-list").hide();
+        $(this).attr("id", "selected");
+        
+        $(".just-added").html($("#selected").html());
+        
+    });
+    //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    
+    //top-list@@@@@@@@@@@@@@@@@@@@@@@@@@
+    $(".movie-sort-list .top").on("mouseenter", function () {
+        $(".top-list").show();
+        $(".featured-list, .a-z-list, .just-added-list").hide();
+    });
+    
+    $(".top-list").on("mouseleave", function () {
+        $(".top-list").hide();
+    });
+    
+    $(".top-list ul li").on("click", function (e) {
+        e.preventDefault();
+        $(".top-list").hide();
+        $(this).attr("id", "selected");
+        
+        $(".top").html($("#selected").html());
+        
+    });
+    //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    
   
     
 });

@@ -1,3 +1,7 @@
+body{
+    position: relative;
+    z-index: 0;
+}
 .movie-sort{
     padding: 20px;
     color: $primary-fcolor;
@@ -7,17 +11,159 @@
     @include breakpoint($tablet){
         height: 60px;
     }
-    
+    li{
+        a{
+            color: $primary-fcolor;
+            &:hover{
+                color: $third-fcolor;
+            }
+        }
+    }
     
     h3{
         font-size: 10px;
     }
-    p{
-        text-align: center;
-        font-size: 8px;
-        @include breakpoint($tablet){
+    .movie-sort-list{
+        li{
+           
+            @include gallery(1 of 4);
+            text-align: center;
             font-size: 10px;
+            
         }
+        
+        }
+    .featured-list{
+        display: none;
+        z-index: 1;
+        position: absolute;
+        top: 600px;
+        left: 20px;
+        font-size: 10px;
+        background-color: $fifth-fcolor;
+        padding: 5px;
+        text-align: center;
+        @include breakpoint($tablet){
+            top: 165px;
+            left: 416px;
+            font-size: 12px;
+        }
+        @include breakpoint($laptop){
+            top: 165px;
+            left: 555px;
+            font-size: 12px;
+        }
+        @include breakpoint($desktop){
+            top: 165px;
+            left: 660px;
+            font-size: 12px;
+        }
+        @include breakpoint(1366px){
+            top: 165px;
+            left: 765px;
+            font-size: 12px;
+        }
+    }
+    
+    .a-z-list{
+        display: none;
+        z-index: 1;
+        position: absolute;
+        top: 600px;
+        left: 90px;
+        font-size: 10px;
+        background-color: $fifth-fcolor;
+        padding: 5px;
+        text-align: center;
+        @include breakpoint($tablet){
+            top: 165px;
+            left: 495px;
+            font-size: 12px;
+        }
+        @include breakpoint($laptop){
+            top: 165px;
+            left: 665px;
+            font-size: 12px;
+        }
+        @include breakpoint($desktop){
+            top: 165px;
+            left: 795px;
+            font-size: 12px;
+        }
+        @include breakpoint(1366px){
+            top: 165px;
+            left: 910px;
+            font-size: 12px;
+        }
+    }
+    
+    .just-added-list{
+        display: none;
+        z-index: 1;
+        width: 60px;
+        position: absolute;
+        top: 600px;
+        left: 170px;
+        font-size: 10px;
+        background-color: $fifth-fcolor;
+        padding: 5px;
+        text-align: center;
+        @include breakpoint($tablet){
+            top: 165px;
+            left: 575px;
+            font-size: 12px;
+            width: 80px;
+        }
+        @include breakpoint($laptop){
+            top: 165px;
+            left: 780px;
+            font-size: 12px;
+        }
+        @include breakpoint($desktop){
+            top: 165px;
+            left: 930px;
+            font-size: 12px;
+        }
+        @include breakpoint(1366px){
+            top: 165px;
+            left: 1070px;
+            font-size: 12px;
+        }
+    }
+    
+    .top-list{
+        display: none;
+        z-index: 1;
+        position: absolute;
+        top: 600px;
+        left: 235px;
+        font-size: 10px;
+        background-color: $fifth-fcolor;
+        padding: 5px;
+        text-align: center;
+        @include breakpoint($tablet){
+            top: 165px;
+            left: 670px;
+            font-size: 12px;
+        }
+        @include breakpoint($laptop){
+            top: 165px;
+            left: 885px;
+            font-size: 12px;
+        }
+        @include breakpoint($desktop){
+            top: 165px;
+            left: 1065px;
+            font-size: 12px;
+        }
+        @include breakpoint(1366px){
+            top: 165px;
+            left: 1215px;
+            font-size: 12px;
+        }
+        
+    }
+    
     }
     .plus{
         background-color: $sec-fcolor;
@@ -51,7 +197,7 @@
         -webkit-appearance: none;
         background: $sec-fcolor url("img/minus.png") no-repeat 95% 50%;
     }
-}
+
 
 .movies-list{
     overflow: hidden;

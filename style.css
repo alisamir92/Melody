@@ -60,35 +60,17 @@ Author URI: http://mohamadelbialy.com
 /*Start home-page layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 /*End home-page layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 /*Start movies layout@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-.movie-sort h3 {
-  width: 45.4545454545%;
-  float: left;
-  margin-right: 9.0909090909%; }
-  @media (min-width: 768px) {
-    .movie-sort h3 {
-      width: 29.4117647059%;
-      float: left;
-      margin-right: 5.8823529412%; } }
-  @media (min-width: 1000px) {
-    .movie-sort h3 {
-      width: 21.7391304348%;
-      float: left;
-      margin-right: 4.347826087%; } }
+@media (min-width: 768px) {
+  .movie-sort h3 {
+    width: 45.4545454545%;
+    float: left;
+    margin-right: 9.0909090909%; } }
 
-.movie-sort .movie-sort-selects {
-  width: 45.4545454545%;
-  float: right;
-  margin-right: 0; }
-  @media (min-width: 768px) {
-    .movie-sort .movie-sort-selects {
-      width: 29.4117647059%;
-      float: right;
-      margin-right: 0; } }
-  @media (min-width: 1000px) {
-    .movie-sort .movie-sort-selects {
-      width: 21.7391304348%;
-      float: right;
-      margin-right: 0; } }
+@media (min-width: 768px) {
+  .movie-sort .movie-sort-list {
+    width: 45.4545454545%;
+    float: right;
+    margin-right: 0; } }
 
 @media (min-width: 768px) {
   .movies-list li {
@@ -519,6 +501,10 @@ header {
     .page-content .home-page-lists h3 {
       font-size: 12px; }
 
+body {
+  position: relative;
+  z-index: 0; }
+
 .movie-sort {
   padding: 20px;
   color: #fff;
@@ -527,44 +513,188 @@ header {
   @media (min-width: 768px) {
     .movie-sort {
       height: 60px; } }
+  .movie-sort li a {
+    color: #fff; }
+    .movie-sort li a:hover {
+      color: #ead80c; }
   .movie-sort h3 {
     font-size: 10px; }
-  .movie-sort p {
+  .movie-sort .movie-sort-list li {
+    width: 21.7391304348%;
+    float: left;
     text-align: center;
-    font-size: 8px; }
-    @media (min-width: 768px) {
-      .movie-sort p {
-        font-size: 10px; } }
-  .movie-sort .plus {
-    background-color: #141414;
-    border: none;
+    font-size: 10px; }
+    .movie-sort .movie-sort-list li:nth-child(4n + 1) {
+      margin-left: 0;
+      margin-right: -100%;
+      clear: both;
+      margin-left: 0; }
+    .movie-sort .movie-sort-list li:nth-child(4n + 2) {
+      margin-left: 26.0869565217%;
+      margin-right: -100%;
+      clear: none; }
+    .movie-sort .movie-sort-list li:nth-child(4n + 3) {
+      margin-left: 52.1739130435%;
+      margin-right: -100%;
+      clear: none; }
+    .movie-sort .movie-sort-list li:nth-child(4n + 4) {
+      margin-left: 78.2608695652%;
+      margin-right: -100%;
+      clear: none; }
+  .movie-sort .featured-list {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    top: 600px;
+    left: 20px;
+    font-size: 10px;
+    background-color: #323232;
     padding: 5px;
-    font-size: 9px;
-    margin-right: 5px;
-    margin-bottom: 3px;
-    color: #fff;
-    width: 80px;
-    -webkit-appearance: none;
-    background: #141414 url("img/plus.png") no-repeat 95% 50%; }
+    text-align: center; }
     @media (min-width: 768px) {
-      .movie-sort .plus {
-        width: 90px;
-        margin-bottom: 0px; } }
-  .movie-sort .minus {
-    background-color: #141414;
-    border: none;
+      .movie-sort .featured-list {
+        top: 165px;
+        left: 416px;
+        font-size: 12px; } }
+    @media (min-width: 1000px) {
+      .movie-sort .featured-list {
+        top: 165px;
+        left: 555px;
+        font-size: 12px; } }
+    @media (min-width: 1200px) {
+      .movie-sort .featured-list {
+        top: 165px;
+        left: 660px;
+        font-size: 12px; } }
+    @media (min-width: 1366px) {
+      .movie-sort .featured-list {
+        top: 165px;
+        left: 765px;
+        font-size: 12px; } }
+  .movie-sort .a-z-list {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    top: 600px;
+    left: 90px;
+    font-size: 10px;
+    background-color: #323232;
     padding: 5px;
-    font-size: 9px;
-    margin-right: 5px;
-    margin-bottom: 3px;
-    color: #fff;
-    width: 80px;
-    -webkit-appearance: none;
-    background: #141414 url("img/minus.png") no-repeat 95% 50%; }
+    text-align: center; }
     @media (min-width: 768px) {
-      .movie-sort .minus {
-        width: 90px;
-        margin-bottom: 0px; } }
+      .movie-sort .a-z-list {
+        top: 165px;
+        left: 495px;
+        font-size: 12px; } }
+    @media (min-width: 1000px) {
+      .movie-sort .a-z-list {
+        top: 165px;
+        left: 665px;
+        font-size: 12px; } }
+    @media (min-width: 1200px) {
+      .movie-sort .a-z-list {
+        top: 165px;
+        left: 795px;
+        font-size: 12px; } }
+    @media (min-width: 1366px) {
+      .movie-sort .a-z-list {
+        top: 165px;
+        left: 910px;
+        font-size: 12px; } }
+  .movie-sort .just-added-list {
+    display: none;
+    z-index: 1;
+    width: 60px;
+    position: absolute;
+    top: 600px;
+    left: 170px;
+    font-size: 10px;
+    background-color: #323232;
+    padding: 5px;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .movie-sort .just-added-list {
+        top: 165px;
+        left: 575px;
+        font-size: 12px;
+        width: 80px; } }
+    @media (min-width: 1000px) {
+      .movie-sort .just-added-list {
+        top: 165px;
+        left: 780px;
+        font-size: 12px; } }
+    @media (min-width: 1200px) {
+      .movie-sort .just-added-list {
+        top: 165px;
+        left: 930px;
+        font-size: 12px; } }
+    @media (min-width: 1366px) {
+      .movie-sort .just-added-list {
+        top: 165px;
+        left: 1070px;
+        font-size: 12px; } }
+  .movie-sort .top-list {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    top: 600px;
+    left: 235px;
+    font-size: 10px;
+    background-color: #323232;
+    padding: 5px;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .movie-sort .top-list {
+        top: 165px;
+        left: 670px;
+        font-size: 12px; } }
+    @media (min-width: 1000px) {
+      .movie-sort .top-list {
+        top: 165px;
+        left: 885px;
+        font-size: 12px; } }
+    @media (min-width: 1200px) {
+      .movie-sort .top-list {
+        top: 165px;
+        left: 1065px;
+        font-size: 12px; } }
+    @media (min-width: 1366px) {
+      .movie-sort .top-list {
+        top: 165px;
+        left: 1215px;
+        font-size: 12px; } }
+
+.plus {
+  background-color: #141414;
+  border: none;
+  padding: 5px;
+  font-size: 9px;
+  margin-right: 5px;
+  margin-bottom: 3px;
+  color: #fff;
+  width: 80px;
+  -webkit-appearance: none;
+  background: #141414 url("img/plus.png") no-repeat 95% 50%; }
+  @media (min-width: 768px) {
+    .plus {
+      width: 90px;
+      margin-bottom: 0px; } }
+
+.minus {
+  background-color: #141414;
+  border: none;
+  padding: 5px;
+  font-size: 9px;
+  margin-right: 5px;
+  margin-bottom: 3px;
+  color: #fff;
+  width: 80px;
+  -webkit-appearance: none;
+  background: #141414 url("img/minus.png") no-repeat 95% 50%; }
+  @media (min-width: 768px) {
+    .minus {
+      width: 90px;
+      margin-bottom: 0px; } }
 
 .movies-list {
   overflow: hidden;

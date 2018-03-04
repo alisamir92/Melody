@@ -157,6 +157,66 @@ header{
 
 .movie-sort{
     padding-right: 70px !important;
+    .featured-list{
+        left: 200px !important;
+        @include breakpoint($tablet){
+            left: 267px !important;
+        }
+        @include breakpoint($laptop){
+            left: 360px !important;
+        }
+        @include breakpoint($desktop){
+            left: 443px !important;
+        }
+        @include breakpoint(1366px){
+            left: 503px !important;
+        }
+    }
+    .a-z-list{
+        left: 157px !important;
+        @include breakpoint($tablet){
+            left: 202px !important;
+        }
+        @include breakpoint($laptop){
+            left: 268px !important;
+        }
+        @include breakpoint($desktop){
+            left: 326px !important;
+        }
+        @include breakpoint(1366px){
+            left: 368px !important;
+        }
+    }
+    .just-added-list{
+        left: 80px !important;
+        @include breakpoint($tablet){
+            left: 95px !important;
+        }
+        @include breakpoint($laptop){
+            left: 133px !important;
+        }
+        @include breakpoint($desktop){
+            left: 168px !important;
+        }
+        @include breakpoint(1366px){
+            left: 192px !important;
+        }
+    }
+    .top-list{
+        left: 35px !important;
+        @include breakpoint($tablet){
+            left: 40px !important;
+        }
+        @include breakpoint($laptop){
+            left: 52px !important;
+        }
+        @include breakpoint($desktop){
+            left: 62px !important;
+        }
+        @include breakpoint(1366px){
+            left: 70px !important;
+        }
+    }
 }
 
 .similar-titles{
