@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="rtl.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fontawesome-free-5.0.6/web-fonts-with-css/css/fontawesome-all.css">
+    <link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
     <link rel="stylesheet" href="OwlCarousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="OwlCarousel/dist/assets/owl.theme.default.css">
 </head>
@@ -25,17 +26,10 @@
             <li><a href="#">Collections</a></li>
         </ul>
         <p class="search-form">
-            
-            <input class="header-search" type="text">
-            <a class="search-icon" href="#"><i class="fas fa-search"></i></a>
-        </p>
-<!--
-        <p class="search-form">
             <a class="search-icon" href="#"><i class="fas fa-search"></i></a>
             <input class="header-search" type="text">
             
         </p>
--->
         <ul class="profile-nav">
             <li><a href="#">MY ACCOUNT</a></li>
             <li><a href="#">WATCHLIST</a></li>
@@ -46,16 +40,18 @@
     
    <div class="login-form">
             
-            <h3 class="login-title">LOGIN FORM</h3>
-            
-                
-                    <label>USER NAME *</label>
-                    <input>
-                    <label>PASSWORD *</label>
-                    <input>
-                    
-                
-            
+            <form id="my">
+                <label for="name">USER NAME*: </label><br>
+                <input type="text" class="left" id="name" name="name">
+                <br>
+                <label for="email">EMAIL*: </label><br>
+                <input type="email" class="left" id="email" name="email">
+                <br>
+                <label for="password">PASSWORD*: </label><br>
+                <input type="password" class="left" id="password" name="password">
+                <br>
+                <input type="submit" value="SUBMIT">
+            </form>
         </div>
     
     
@@ -76,6 +72,8 @@
  
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
     <script src="OwlCarousel/dist/owl.carousel.min.js"></script>
     <script src="app.js"></script>
     <script src="http://localhost:35729/livereload.js"></script>

@@ -1,4 +1,6 @@
-/*global $*/
+/*global $*/ /*console*/
+
+//home-page@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 $(document).ready(function () {
     "use strict";
     $('.owl-main').owlCarousel({
@@ -39,7 +41,7 @@ $(document).ready(function () {
     });
     
     $('.home-slider').owlCarousel({
-        loop: true,
+        loop: false,
         margin: 10,
         nav: true,
         
@@ -58,7 +60,7 @@ $(document).ready(function () {
     
     $('.home-slider-rtl').owlCarousel({
         rtl: true,
-        loop: true,
+        loop: false,
         margin: 10,
         nav: true,
         
@@ -79,6 +81,45 @@ $(document).ready(function () {
     
     $('.owl-next').html("<i class='fas fa-chevron-right fa-3x'></i>");
     
+    
+//    $('.collections >div >div >div > li').on('mouseover', function (e) {
+//   
+//        if (!$(".hidden-movies-buttons").hasClass('hidden-movies-buttons-hover')) {
+//            $(".hidden-movies-buttons").addClass('hidden-movies-buttons-hover');
+//        }
+//    }).on('mouseout', function (e) {
+//        if ($(".hidden-movies-buttons").hasClass('no-hover')) {
+//            $(".hidden-movies-buttons").removeClass('no-hover');
+//        }
+//    });
+    
+//    var count = document.getElementsByClassName("owl-stage").length,
+//        i,
+//        li_id = document.querySelectorAll(".collections");
+//    console.log(li_id);
+//    console.log(li_id.childNodes[i]);
+//    for (i = 0; i <= count; i++) {
+//        li_id.childNodes[i].id = i+1;
+//        
+//        $(li_id[i]).on("mouseenter", function () {
+//            $(".hidden-movies-buttons").toggleClass("no-hover").toggleClass("hidden-movies-buttons-hover");
+//        });
+//        
+//        $(li_id[i]).on("mouseleave", function () {
+//            $(".hidden-movies-buttons").toggleClass("no-hover").toggleClass("hidden-movies-buttons-hover");
+//        });
+//    }
+    
+//    $(".movie").on("mouseenter", function(){
+//        $(".hidden-movies-buttons").toggleClass("no-hover").toggleClass("hidden-movies-buttons-hover");
+//        
+//    });
+//    $(".movie").on("mouseleave", function(){
+//        $(".hidden-movies-buttons").toggleClass("no-hover").toggleClass("hidden-movies-buttons-hover");
+//        
+//    });
+
+    //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     
     
     $(".select").on({
@@ -191,8 +232,38 @@ $(document).ready(function () {
         $(".top").html($("#selected").html());
         
     });
+    
+    
+    $(".movie-sort").on("mouseleave", function () {
+        $(".featured-list, .a-z-list, .just-added-list, .top-list").hide();
+    });
     //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     
-  
-    
+    //login-form validation@@@@@@@@@@@@@@@@@
+    jQuery.validator.setDefaults({
+        debug: true,
+        success: "valid"
+    });
+    $("#my").validate({
+        rules: {
+            name: {
+                required: true,
+                minlength: 8
+         
+            },
+            email: {
+                required: true,
+                email: true
+                
+        
+            },
+            password: {
+                required: true,
+                minlength: 8
+                
+        
+            }
+        }
+    });
+    //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 });

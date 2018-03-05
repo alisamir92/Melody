@@ -35,7 +35,7 @@
         
         
         .owl-nav{
-            
+            display: none;
             padding: 0px;
             position: absolute;
             width: 100%;
@@ -82,12 +82,64 @@
             font-size: 12px;
         }
         
+        li{
+            position: relative;
+            z-index: 0;
+            
+            .no-hover{
+                display: none;
+                z-index: 1;
+                position: absolute;
+                top: 25px;
+                left: 70px;
+                text-align: center;
+                button{
+                    width: 120px;
+                    height: 20px;
+                    background-color: $primary-fcolor;
+                    border: none;
+                    a{
+                        color: $fifth-fcolor;
+                        opacity: 1;
+                    }
+                }
+                a{
+                    color: $fourth-fcolor;
+                    opacity: 0.5;
+                }
+            }
+            .hidden-movies-buttons-hover{
+                z-index: 1;
+                position: absolute;
+                top: 25px;
+                left: 70px;
+                text-align: center;
+                button{
+                    width: 120px;
+                    height: 20px;
+                    background-color: $primary-fcolor;
+                    border: none;
+                    a{
+                        color: $fifth-fcolor;
+                        opacity: 1;
+                    }
+                }
+                a{
+                    color: $fourth-fcolor;
+                    opacity: 0.5;
+                }
+            }
+            
+        }
+        
         h3{
             font-size: 12px;
         }
         
         
     }
+    
+    
     
 }
 

@@ -461,6 +461,7 @@ header {
         float: left;
         background-color: transparent; }
   .page-content .home-slider .owl-nav {
+    display: none;
     padding: 0px;
     position: absolute;
     width: 100%;
@@ -498,6 +499,44 @@ header {
     .page-content .home-page-lists h5 {
       color: #a7a7a7;
       font-size: 12px; }
+    .page-content .home-page-lists li {
+      position: relative;
+      z-index: 0; }
+      .page-content .home-page-lists li .no-hover {
+        display: none;
+        z-index: 1;
+        position: absolute;
+        top: 25px;
+        left: 70px;
+        text-align: center; }
+        .page-content .home-page-lists li .no-hover button {
+          width: 120px;
+          height: 20px;
+          background-color: #fff;
+          border: none; }
+          .page-content .home-page-lists li .no-hover button a {
+            color: #323232;
+            opacity: 1; }
+        .page-content .home-page-lists li .no-hover a {
+          color: #ececec;
+          opacity: 0.5; }
+      .page-content .home-page-lists li .hidden-movies-buttons-hover {
+        z-index: 1;
+        position: absolute;
+        top: 25px;
+        left: 70px;
+        text-align: center; }
+        .page-content .home-page-lists li .hidden-movies-buttons-hover button {
+          width: 120px;
+          height: 20px;
+          background-color: #fff;
+          border: none; }
+          .page-content .home-page-lists li .hidden-movies-buttons-hover button a {
+            color: #323232;
+            opacity: 1; }
+        .page-content .home-page-lists li .hidden-movies-buttons-hover a {
+          color: #ececec;
+          opacity: 0.5; }
     .page-content .home-page-lists h3 {
       font-size: 12px; }
 
@@ -554,29 +593,29 @@ body {
     @media (min-width: 768px) {
       .movie-sort .featured-list {
         top: 165px;
-        left: 416px;
+        left: 425px;
         font-size: 12px; } }
     @media (min-width: 1000px) {
       .movie-sort .featured-list {
         top: 165px;
-        left: 555px;
+        left: 562px;
         font-size: 12px; } }
     @media (min-width: 1200px) {
       .movie-sort .featured-list {
         top: 165px;
-        left: 660px;
+        left: 680px;
         font-size: 12px; } }
     @media (min-width: 1366px) {
       .movie-sort .featured-list {
         top: 165px;
-        left: 765px;
+        left: 770px;
         font-size: 12px; } }
   .movie-sort .a-z-list {
     display: none;
     z-index: 1;
     position: absolute;
     top: 600px;
-    left: 90px;
+    left: 105px;
     font-size: 10px;
     background-color: #323232;
     padding: 5px;
@@ -584,30 +623,29 @@ body {
     @media (min-width: 768px) {
       .movie-sort .a-z-list {
         top: 165px;
-        left: 495px;
+        left: 520px;
         font-size: 12px; } }
     @media (min-width: 1000px) {
       .movie-sort .a-z-list {
         top: 165px;
-        left: 665px;
+        left: 685px;
         font-size: 12px; } }
     @media (min-width: 1200px) {
       .movie-sort .a-z-list {
         top: 165px;
-        left: 795px;
+        left: 830px;
         font-size: 12px; } }
     @media (min-width: 1366px) {
       .movie-sort .a-z-list {
         top: 165px;
-        left: 910px;
+        left: 935px;
         font-size: 12px; } }
   .movie-sort .just-added-list {
     display: none;
     z-index: 1;
-    width: 60px;
     position: absolute;
     top: 600px;
-    left: 170px;
+    left: 177px;
     font-size: 10px;
     background-color: #323232;
     padding: 5px;
@@ -615,7 +653,7 @@ body {
     @media (min-width: 768px) {
       .movie-sort .just-added-list {
         top: 165px;
-        left: 575px;
+        left: 590px;
         font-size: 12px;
         width: 80px; } }
     @media (min-width: 1000px) {
@@ -626,7 +664,7 @@ body {
     @media (min-width: 1200px) {
       .movie-sort .just-added-list {
         top: 165px;
-        left: 930px;
+        left: 950px;
         font-size: 12px; } }
     @media (min-width: 1366px) {
       .movie-sort .just-added-list {
@@ -638,7 +676,7 @@ body {
     z-index: 1;
     position: absolute;
     top: 600px;
-    left: 235px;
+    left: 253px;
     font-size: 10px;
     background-color: #323232;
     padding: 5px;
@@ -646,22 +684,22 @@ body {
     @media (min-width: 768px) {
       .movie-sort .top-list {
         top: 165px;
-        left: 670px;
+        left: 685px;
         font-size: 12px; } }
     @media (min-width: 1000px) {
       .movie-sort .top-list {
         top: 165px;
-        left: 885px;
+        left: 915px;
         font-size: 12px; } }
     @media (min-width: 1200px) {
       .movie-sort .top-list {
         top: 165px;
-        left: 1065px;
+        left: 1107px;
         font-size: 12px; } }
     @media (min-width: 1366px) {
       .movie-sort .top-list {
         top: 165px;
-        left: 1215px;
+        left: 1250px;
         font-size: 12px; } }
 
 .plus {
@@ -894,27 +932,22 @@ body {
     font-size: 12px; }
 
 .login-form {
-  background-color: #323232;
-  text-align: center;
-  color: #fff;
-  padding: 20px 10px; }
-  @media (min-width: 768px) {
-    .login-form {
-      height: 367px; } }
-  .login-form .login-title {
-    background-color: #141414;
-    padding: 10px;
-    margin-bottom: 10px;
-    color: white; }
-  .login-form label, .login-form input {
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff; }
+  .login-form:after {
+    content: " ";
     display: block;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto; }
-    .login-form label:after, .login-form input:after {
-      content: " ";
-      display: block;
-      clear: both; }
+    clear: both; }
+  .login-form input:last-child {
+    background-color: #404040;
+    color: #fff;
+    width: 80px;
+    height: 30px; }
+  .login-form .error {
+    display: block;
+    text-align: center; }
 
 .about-us {
   background-color: #323232;

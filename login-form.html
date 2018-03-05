@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fontawesome-free-5.0.6/web-fonts-with-css/css/fontawesome-all.css">
+    <link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
     <link rel="stylesheet" href="OwlCarousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="OwlCarousel/dist/assets/owl.theme.default.css">
 </head>
@@ -39,16 +40,18 @@
     
    <div class="login-form">
             
-            <h3 class="login-title">LOGIN FORM</h3>
-            
-                
-                    <label>USER NAME *</label>
-                    <input>
-                    <label>PASSWORD *</label>
-                    <input>
-                    
-                
-            
+            <form id="my">
+                <label for="name">USER NAME*: </label><br>
+                <input type="text" class="left" id="name" name="name">
+                <br>
+                <label for="email">EMAIL*: </label><br>
+                <input type="email" class="left" id="email" name="email">
+                <br>
+                <label for="password">PASSWORD*: </label><br>
+                <input type="password" class="left" id="password" name="password">
+                <br>
+                <input type="submit" value="SUBMIT">
+            </form>
         </div>
     
     
@@ -69,6 +72,8 @@
  
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
     <script src="OwlCarousel/dist/owl.carousel.min.js"></script>
     <script src="app.js"></script>
     <script src="http://localhost:35729/livereload.js"></script>

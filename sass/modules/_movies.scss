@@ -45,22 +45,22 @@ body{
         text-align: center;
         @include breakpoint($tablet){
             top: 165px;
-            left: 416px;
+            left: 425px;
             font-size: 12px;
         }
         @include breakpoint($laptop){
             top: 165px;
-            left: 555px;
+            left: 562px;
             font-size: 12px;
         }
         @include breakpoint($desktop){
             top: 165px;
-            left: 660px;
+            left: 680px;
             font-size: 12px;
         }
         @include breakpoint(1366px){
             top: 165px;
-            left: 765px;
+            left: 770px;
             font-size: 12px;
         }
     }
@@ -70,29 +70,29 @@ body{
         z-index: 1;
         position: absolute;
         top: 600px;
-        left: 90px;
+        left: 105px;
         font-size: 10px;
         background-color: $fifth-fcolor;
         padding: 5px;
         text-align: center;
         @include breakpoint($tablet){
             top: 165px;
-            left: 495px;
+            left: 520px;
             font-size: 12px;
         }
         @include breakpoint($laptop){
             top: 165px;
-            left: 665px;
+            left: 685px;
             font-size: 12px;
         }
         @include breakpoint($desktop){
             top: 165px;
-            left: 795px;
+            left: 830px;
             font-size: 12px;
         }
         @include breakpoint(1366px){
             top: 165px;
-            left: 910px;
+            left: 935px;
             font-size: 12px;
         }
     }
@@ -100,17 +100,16 @@ body{
     .just-added-list{
         display: none;
         z-index: 1;
-        width: 60px;
         position: absolute;
         top: 600px;
-        left: 170px;
+        left: 177px;
         font-size: 10px;
         background-color: $fifth-fcolor;
         padding: 5px;
         text-align: center;
         @include breakpoint($tablet){
             top: 165px;
-            left: 575px;
+            left: 590px;
             font-size: 12px;
             width: 80px;
         }
@@ -121,7 +120,7 @@ body{
         }
         @include breakpoint($desktop){
             top: 165px;
-            left: 930px;
+            left: 950px;
             font-size: 12px;
         }
         @include breakpoint(1366px){
@@ -136,29 +135,29 @@ body{
         z-index: 1;
         position: absolute;
         top: 600px;
-        left: 235px;
+        left: 253px;
         font-size: 10px;
         background-color: $fifth-fcolor;
         padding: 5px;
         text-align: center;
         @include breakpoint($tablet){
             top: 165px;
-            left: 670px;
+            left: 685px;
             font-size: 12px;
         }
         @include breakpoint($laptop){
             top: 165px;
-            left: 885px;
+            left: 915px;
             font-size: 12px;
         }
         @include breakpoint($desktop){
             top: 165px;
-            left: 1065px;
+            left: 1107px;
             font-size: 12px;
         }
         @include breakpoint(1366px){
             top: 165px;
-            left: 1215px;
+            left: 1250px;
             font-size: 12px;
         }
         
