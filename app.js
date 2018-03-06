@@ -4,7 +4,7 @@
 $(document).ready(function () {
     "use strict";
     $('.owl-main').owlCarousel({
-        loop: true,
+        loop: false,
         margin: 10,
         nav: true,
         
@@ -23,7 +23,7 @@ $(document).ready(function () {
     
     $('.owl-main-rtl').owlCarousel({
         rtl: true,
-        loop: true,
+        loop: false,
         margin: 10,
         nav: true,
         
@@ -81,47 +81,45 @@ $(document).ready(function () {
     
     $('.owl-next').html("<i class='fas fa-chevron-right fa-3x'></i>");
     
+    $(".page-content .home-page-lists li").hover(function () {
+        $(this).find(".hidden-movies-buttons").css("display", "block");
+    }, function () {
+        $(this).find(".hidden-movies-buttons").css("display", "none");
+    });
     
-//    $('.collections >div >div >div > li').on('mouseover', function (e) {
-//   
-//        if (!$(".hidden-movies-buttons").hasClass('hidden-movies-buttons-hover')) {
-//            $(".hidden-movies-buttons").addClass('hidden-movies-buttons-hover');
-//        }
-//    }).on('mouseout', function (e) {
-//        if ($(".hidden-movies-buttons").hasClass('no-hover')) {
-//            $(".hidden-movies-buttons").removeClass('no-hover');
-//        }
-//    });
+    $(".page-content .owl-main li").hover(function () {
+        $(this).find(".main-hidden-movies-buttons").css("display", "block");
+    }, function () {
+        $(this).find(".main-hidden-movies-buttons").css("display", "none");
+    });
     
-//    var count = document.getElementsByClassName("owl-stage").length,
-//        i,
-//        li_id = document.querySelectorAll(".collections");
-//    console.log(li_id);
-//    console.log(li_id.childNodes[i]);
-//    for (i = 0; i <= count; i++) {
-//        li_id.childNodes[i].id = i+1;
-//        
-//        $(li_id[i]).on("mouseenter", function () {
-//            $(".hidden-movies-buttons").toggleClass("no-hover").toggleClass("hidden-movies-buttons-hover");
-//        });
-//        
-//        $(li_id[i]).on("mouseleave", function () {
-//            $(".hidden-movies-buttons").toggleClass("no-hover").toggleClass("hidden-movies-buttons-hover");
-//        });
-//    }
-    
-//    $(".movie").on("mouseenter", function(){
-//        $(".hidden-movies-buttons").toggleClass("no-hover").toggleClass("hidden-movies-buttons-hover");
-//        
-//    });
-//    $(".movie").on("mouseleave", function(){
-//        $(".hidden-movies-buttons").toggleClass("no-hover").toggleClass("hidden-movies-buttons-hover");
-//        
-//    });
+
 
     //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     
+    //movies@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    $(".movies-list li").hover(function () {
+        $(this).find(".hidden-movies-buttons").css("display", "block");
+    }, function () {
+        $(this).find(".hidden-movies-buttons").css("display", "none");
+    });
+    //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     
+    //series-details@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    
+    $(".ep .ep-list li .ep-share").click(function (e) {
+        e.preventDefault();
+        $(this).find(".ep-social").fadeToggle();
+        $(this).mouseleave(function () {
+            $(".ep-social").fadeOut();
+        });
+    });
+    
+    $(".ep-social").mouseleave(function () {
+        $(this).fadeOut();
+    });
+    
+    //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     $(".select").on({
         click: function () {
             $(this).toggleClass("plus").toggleClass("minus");

@@ -46,7 +46,56 @@
     background-color: transparent;
     color: $primary-fcolor;
         .ep{
-            
+            .ep-list{
+                li{
+                    i{
+                        margin: 10px;
+                        color: $seventh-fcolor;
+                        &:hover{
+                            color: $primary-fcolor;
+                        }
+                    }
+                    .fa-facebook-f{
+                        color: $primary-fcolor;
+                        &:hover{
+                            color: #7654ff;
+                        }
+                    }
+                    .fa-twitter{
+                        color: $primary-fcolor;
+                        &:hover{
+                            color: #29c5f6;
+                        }
+                    }
+                    .fa-instagram{
+                        color: $primary-fcolor;
+                        &:hover{
+                            color: #e8590c;
+                        }
+                    }
+                    .ep-number{
+                        a{
+                            color: $primary-fcolor;
+                            &:hover{
+                            color: $third-fcolor;
+                            }
+                        }
+                        
+                    }
+                    span{
+                        
+                        .ep-social{
+                            display: none;
+                            padding: 3px 10px;
+                            background-color: $seventh-fcolor;
+                            border-radius: 20px;
+                        }
+                        .ep-social-visible{
+                            visibility: visible;
+                        }
+                    }
+                }
+            }
         }
         .series-details{
             margin: 30px auto;
