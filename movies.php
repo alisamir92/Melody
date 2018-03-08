@@ -47,7 +47,8 @@
 
         </ul>
         
-        <div class="featured-list">
+        <div class="hidden-lists">
+            <div class="featured-list">
             <ul>
                 <li><a href="#">jhg</a></li>
                 <li><a href="#">ghj</a></li>
@@ -81,6 +82,7 @@
                 <li><a href="#">ef wefef</a></li>
                 <li><a href="#">ewff vdvefwef</a></li>
             </ul>
+        </div>
         </div>
         
     </div>
