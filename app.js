@@ -93,7 +93,31 @@ $(document).ready(function () {
         $(this).find(".main-hidden-movies-buttons").css("display", "none");
     });
     
+    $(".page-content .owl-main-rtl li").hover(function () {
+        $(this).find(".main-hidden-movies-buttons").css("display", "block");
+    }, function () {
+        $(this).find(".main-hidden-movies-buttons").css("display", "none");
+    });
+    
+    $(".main-hidden-movies-buttons").on("submit", function () {
+        var mainMovieID = $(".owl-main").find("li").attr("id");
+        
+        var request = $.ajax({
+            
+                url: "test.php",
+                method: "POST",
+                data: { id : mainMovieID },
+                dataType: "html"
+            });
 
+        request.done(function () {
+            alert("done");
+        });
+
+        request.fail(function (jqXHR, textStatus) {
+            alert("Request failed: " + textStatus);
+        });
+    });
 
     //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     
@@ -102,6 +126,29 @@ $(document).ready(function () {
         $(this).find(".hidden-movies-buttons").css("display", "block");
     }, function () {
         $(this).find(".hidden-movies-buttons").css("display", "none");
+    });
+    
+
+    
+    
+    $(".hidden-movies-buttons").on("submit", function () {
+        var movieID = $(".movies-list").find("li").attr("id");
+        
+        var request = $.ajax({
+            
+                url: "test.php",
+                method: "POST",
+                data: { id : movieID },
+                dataType: "html"
+            });
+
+        request.done(function () {
+            alert("done");
+        });
+
+        request.fail(function (jqXHR, textStatus) {
+            alert("Request failed: " + textStatus);
+        });
     });
     //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     

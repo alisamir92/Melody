@@ -77,6 +77,15 @@
                         
                     }
                 }
+                input{
+                    width: 100px;
+                    @include breakpoint($tablet){
+                    width: 100px;
+                }
+                    height: 20px;
+                    background-color: $primary-fcolor;
+                    border: none;
+                }
                 a{
                     color: $fourth-fcolor;
                     
@@ -196,6 +205,15 @@
                         color: $fifth-fcolor;
                         opacity: 1;
                     }
+                }
+                input{
+                    width: 120px;
+                    @include breakpoint($tablet){
+                    width: 100px;
+                }
+                    height: 20px;
+                    background-color: $primary-fcolor;
+                    border: none;
                 }
                 a{
                     color: $fourth-fcolor;

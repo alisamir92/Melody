@@ -344,6 +344,14 @@ header .search-form .header-search {
             width: 100px; } }
         .owl-main-rtl .item .main-hidden-movies-buttons button a {
           color: #323232; }
+      .owl-main-rtl .item .main-hidden-movies-buttons input {
+        width: 100px;
+        height: 20px;
+        background-color: #fff;
+        border: none; }
+        @media (min-width: 768px) {
+          .owl-main-rtl .item .main-hidden-movies-buttons input {
+            width: 100px; } }
       .owl-main-rtl .item .main-hidden-movies-buttons a {
         color: #ececec; }
 
@@ -482,15 +490,6 @@ header .search-form .header-search {
     @media (min-width: 1366px) {
       .movie-sort .top-list {
         left: 70px !important; } }
-
-@media (min-width: 1000px) {
-  .hidden-movies-buttons {
-    left: 25px !important; } }
-
-@media (min-width: 1200px) {
-  .hidden-movies-buttons {
-    top: 15px;
-    left: 40px !important; } }
 
 .fa-share {
   transform: rotateY(180deg); }
@@ -747,6 +746,14 @@ header {
               width: 100px; } }
           .page-content .owl-main .item .main-hidden-movies-buttons button a {
             color: #323232; }
+        .page-content .owl-main .item .main-hidden-movies-buttons input {
+          width: 100px;
+          height: 20px;
+          background-color: #fff;
+          border: none; }
+          @media (min-width: 768px) {
+            .page-content .owl-main .item .main-hidden-movies-buttons input {
+              width: 100px; } }
         .page-content .owl-main .item .main-hidden-movies-buttons a {
           color: #ececec; }
   .page-content .home-slider {
@@ -837,6 +844,14 @@ header {
           .page-content .home-page-lists .movie .hidden-movies-buttons button a {
             color: #323232;
             opacity: 1; }
+        .page-content .home-page-lists .movie .hidden-movies-buttons input {
+          width: 120px;
+          height: 20px;
+          background-color: #fff;
+          border: none; }
+          @media (min-width: 768px) {
+            .page-content .home-page-lists .movie .hidden-movies-buttons input {
+              width: 100px; } }
         .page-content .home-page-lists .movie .hidden-movies-buttons a {
           color: #ececec;
           opacity: 0.5; }
@@ -1079,6 +1094,14 @@ body {
         .movies-list li .hidden-movies-buttons button a {
           color: #323232;
           opacity: 1; }
+      .movies-list li .hidden-movies-buttons input {
+        width: 100px;
+        height: 20px;
+        background-color: #fff;
+        border: none; }
+        @media (min-width: 768px) {
+          .movies-list li .hidden-movies-buttons input {
+            width: 100px; } }
       .movies-list li .hidden-movies-buttons a {
         color: #ececec;
         opacity: 0.5; }
@@ -1226,34 +1249,48 @@ body {
   padding: 20px;
   background-color: transparent;
   color: #fff; }
-  .series .ep .ep-list li i {
-    margin: 10px;
-    color: #404040; }
-    .series .ep .ep-list li i:hover {
+  .series .ep .ep-list {
+    font-size: 12px; }
+    @media (min-width: 768px) {
+      .series .ep .ep-list {
+        font-size: 12px; } }
+    .series .ep .ep-list li i {
+      margin: 10px;
+      color: #404040; }
+      @media (min-width: 768px) {
+        .series .ep .ep-list li i {
+          margin: 3px; } }
+      @media (min-width: 1000px) {
+        .series .ep .ep-list li i {
+          margin: 6px; } }
+      @media (min-width: 1200px) {
+        .series .ep .ep-list li i {
+          margin: 10px; } }
+      .series .ep .ep-list li i:hover {
+        color: #fff; }
+    .series .ep .ep-list li .fa-facebook-f {
       color: #fff; }
-  .series .ep .ep-list li .fa-facebook-f {
-    color: #fff; }
-    .series .ep .ep-list li .fa-facebook-f:hover {
-      color: #7654ff; }
-  .series .ep .ep-list li .fa-twitter {
-    color: #fff; }
-    .series .ep .ep-list li .fa-twitter:hover {
-      color: #29c5f6; }
-  .series .ep .ep-list li .fa-instagram {
-    color: #fff; }
-    .series .ep .ep-list li .fa-instagram:hover {
-      color: #e8590c; }
-  .series .ep .ep-list li .ep-number a {
-    color: #fff; }
-    .series .ep .ep-list li .ep-number a:hover {
-      color: #ead80c; }
-  .series .ep .ep-list li span .ep-social {
-    display: none;
-    padding: 3px 10px;
-    background-color: #404040;
-    border-radius: 20px; }
-  .series .ep .ep-list li span .ep-social-visible {
-    visibility: visible; }
+      .series .ep .ep-list li .fa-facebook-f:hover {
+        color: #7654ff; }
+    .series .ep .ep-list li .fa-twitter {
+      color: #fff; }
+      .series .ep .ep-list li .fa-twitter:hover {
+        color: #29c5f6; }
+    .series .ep .ep-list li .fa-instagram {
+      color: #fff; }
+      .series .ep .ep-list li .fa-instagram:hover {
+        color: #e8590c; }
+    .series .ep .ep-list li .ep-number a {
+      color: #fff; }
+      .series .ep .ep-list li .ep-number a:hover {
+        color: #ead80c; }
+    .series .ep .ep-list li span .ep-social {
+      display: none;
+      padding: 3px 10px;
+      background-color: #404040;
+      border-radius: 20px; }
+    .series .ep .ep-list li span .ep-social-visible {
+      visibility: visible; }
   .series .series-details {
     margin: 30px auto; }
     .series .series-details .title {
@@ -1323,8 +1360,7 @@ body {
   .about-us h1 {
     background-color: #141414;
     padding: 10px;
-    margin-bottom: 10px;
-    color: white; }
+    margin-bottom: 10px; }
 
 .base-elements {
   background-color: #141414;

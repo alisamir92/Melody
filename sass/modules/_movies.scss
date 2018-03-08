@@ -248,6 +248,15 @@ body{
                     opacity: 1;
                 }
             }
+            input{
+                width: 100px;
+                @include breakpoint($tablet){
+                width: 100px;
+            }
+                height: 20px;
+                background-color: $primary-fcolor;
+                border: none;
+            }
             a{
                 color: $fourth-fcolor;
                 opacity: 0.5;

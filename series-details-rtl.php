@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="rtl.css">
     <link rel="stylesheet" href="fontawesome-free-5.0.6/web-fonts-with-css/css/fontawesome-all.css">
     <link rel="stylesheet" href="OwlCarousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="OwlCarousel/dist/assets/owl.theme.default.css">
@@ -253,82 +253,89 @@
             
             
             
-            <li>
+            <li id="27">
                 <img src="img/Melody_Homepage-movie1.jpg">
                 <h3>Lorum Ipsum Dolor Set</h3>
-                <div class="hidden-movies-buttons">
+                <form id="hidden-movies-buttons" class="hidden-movies-buttons" method="post">
                         <a href="#"><i class="fas fa-play fa-2x"></i></a>
                         <br>
                         <button><a href="#">Info/Share</a></button>
                         <br>
-                        <button><a href="#">Add/Remove</a></button>
-                    </div>
+                        <input type="hidden" name="action" value="ADD">
+                        <input type="submit" value="ADD">
+                    </form>
             </li>
-            <li>
-                <img src="img/Melody_Homepage-movie2.jpg">
+            <li id="28">
+                <img src="img/Melody_Homepage-movie1.jpg">
                 <h3>Lorum Ipsum Dolor Set</h3>
-                <div class="hidden-movies-buttons">
+                <form id="hidden-movies-buttons" class="hidden-movies-buttons" method="post">
                         <a href="#"><i class="fas fa-play fa-2x"></i></a>
                         <br>
                         <button><a href="#">Info/Share</a></button>
                         <br>
-                        <button><a href="#">Add/Remove</a></button>
-                    </div>
+                        <input type="hidden" name="action" value="ADD">
+                        <input type="submit" value="ADD">
+                    </form>
             </li>
-            <li>
-                <img src="img/Melody_Homepage-movie3.jpg">
+            <li id="29">
+                <img src="img/Melody_Homepage-movie1.jpg">
                 <h3>Lorum Ipsum Dolor Set</h3>
-                <div class="hidden-movies-buttons">
+                <form id="hidden-movies-buttons" class="hidden-movies-buttons" method="post">
                         <a href="#"><i class="fas fa-play fa-2x"></i></a>
                         <br>
                         <button><a href="#">Info/Share</a></button>
                         <br>
-                        <button><a href="#">Add/Remove</a></button>
-                    </div>
+                        <input type="hidden" name="action" value="ADD">
+                        <input type="submit" value="ADD">
+                    </form>
             </li>
-            <li>
-                <img src="img/Melody_Homepage-movie4.jpg">
+            <li id="30">
+                <img src="img/Melody_Homepage-movie1.jpg">
                 <h3>Lorum Ipsum Dolor Set</h3>
-                <div class="hidden-movies-buttons">
+                <form id="hidden-movies-buttons" class="hidden-movies-buttons" method="post">
                         <a href="#"><i class="fas fa-play fa-2x"></i></a>
                         <br>
                         <button><a href="#">Info/Share</a></button>
                         <br>
-                        <button><a href="#">Add/Remove</a></button>
-                    </div>
+                        <input type="hidden" name="action" value="ADD">
+                        <input type="submit" value="ADD">
+                    </form>
             </li>
-            <li>
-                <img src="img/Melody_Homepage-movie5.jpg">
+            <li id="31">
+                <img src="img/Melody_Homepage-movie1.jpg">
                 <h3>Lorum Ipsum Dolor Set</h3>
-                <div class="hidden-movies-buttons">
+                <form id="hidden-movies-buttons" class="hidden-movies-buttons" method="post">
                         <a href="#"><i class="fas fa-play fa-2x"></i></a>
                         <br>
                         <button><a href="#">Info/Share</a></button>
                         <br>
-                        <button><a href="#">Add/Remove</a></button>
-                    </div>
+                        <input type="hidden" name="action" value="ADD">
+                        <input type="submit" value="ADD">
+                    </form>
             </li>
-            <li>
-                <img src="img/Melody_Homepage-movie3.jpg">
+            <li id="32">
+                <img src="img/Melody_Homepage-movie1.jpg">
                 <h3>Lorum Ipsum Dolor Set</h3>
-                <div class="hidden-movies-buttons">
+                <form id="hidden-movies-buttons" class="hidden-movies-buttons" method="post">
                         <a href="#"><i class="fas fa-play fa-2x"></i></a>
                         <br>
                         <button><a href="#">Info/Share</a></button>
                         <br>
-                        <button><a href="#">Add/Remove</a></button>
-                    </div>
+                        <input type="hidden" name="action" value="ADD">
+                        <input type="submit" value="ADD">
+                    </form>
             </li>
-            <li>
-                <img src="img/Melody_Homepage-movie4.jpg">
+            <li id="33">
+                <img src="img/Melody_Homepage-movie1.jpg">
                 <h3>Lorum Ipsum Dolor Set</h3>
-                <div class="hidden-movies-buttons">
+                <form id="hidden-movies-buttons" class="hidden-movies-buttons" method="post">
                         <a href="#"><i class="fas fa-play fa-2x"></i></a>
                         <br>
                         <button><a href="#">Info/Share</a></button>
                         <br>
-                        <button><a href="#">Add/Remove</a></button>
-                    </div>
+                        <input type="hidden" name="action" value="ADD">
+                        <input type="submit" value="ADD">
+                    </form>
             </li>
             
             

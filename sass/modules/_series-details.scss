@@ -47,9 +47,22 @@
     color: $primary-fcolor;
         .ep{
             .ep-list{
+                font-size: 12px;
+                @include breakpoint($tablet){
+                    font-size: 12px;
+                }
                 li{
                     i{
                         margin: 10px;
+                        @include breakpoint($tablet){
+                            margin: 3px;
+                        }
+                        @include breakpoint($laptop){
+                            margin: 6px;
+                        }
+                        @include breakpoint($desktop){
+                            margin: 10px;
+                        }
                         color: $seventh-fcolor;
                         &:hover{
                             color: $primary-fcolor;
