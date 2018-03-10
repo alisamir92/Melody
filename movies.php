@@ -85,50 +85,8 @@
                 </ul>
             
         </div>
-<!--
-        <div class="hidden-lists">
-            <div class="featured-list">
-            <ul>
-                <li><a href="#">jhg</a></li>
-                <li><a href="#">ghj</a></li>
-                <li><a href="#">ghj ss</a></li>
-                <li><a href="#">gh wgw</a></li>
-            </ul>
-        </div>
-        
-        <div class="a-z-list">
-            <ul>
-                <li><a href="#">agwe efz</a></li>
-                <li><a href="#">fwefxcv wefef</a></li>
-                <li><a href="#">efwefef</a></li>
-                <li><a href="#">ewffefwef</a></li>
-            </ul>
-        </div>
-        
-        <div class="just-added-list">
-            <ul>
-                <li><a href="#">agwe efz</a></li>
-                <li><a href="#">fwefwv efef</a></li>
-                <li><a href="#">efwefef</a></li>
-                <li><a href="#">ewffe fwef</a></li>
-            </ul>
-        </div>
-        
-        <div class="top-list">
-            <ul>
-                <li><a href="#">agwe efz</a></li>
-                <li><a href="#">fwefwefef</a></li>
-                <li><a href="#">ef wefef</a></li>
-                <li><a href="#">ewff vdvefwef</a></li>
-            </ul>
-        </div>
-        </div>
--->
-        
+
     
-    
-    
-        
         <ul class="movies-list">
             
             <li id="1">

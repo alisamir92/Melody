@@ -480,65 +480,6 @@ header .search-form .header-search {
       width: 90px;
       margin-bottom: 0px; } }
 
-.movie-sort {
-  padding-right: 70px !important; }
-  .movie-sort .featured-list {
-    left: 205px !important; }
-    @media (min-width: 768px) {
-      .movie-sort .featured-list {
-        left: 267px !important; } }
-    @media (min-width: 1000px) {
-      .movie-sort .featured-list {
-        left: 360px !important; } }
-    @media (min-width: 1200px) {
-      .movie-sort .featured-list {
-        left: 443px !important; } }
-    @media (min-width: 1366px) {
-      .movie-sort .featured-list {
-        left: 503px !important; } }
-  .movie-sort .a-z-list {
-    left: 157px !important; }
-    @media (min-width: 768px) {
-      .movie-sort .a-z-list {
-        left: 202px !important; } }
-    @media (min-width: 1000px) {
-      .movie-sort .a-z-list {
-        left: 268px !important; } }
-    @media (min-width: 1200px) {
-      .movie-sort .a-z-list {
-        left: 326px !important; } }
-    @media (min-width: 1366px) {
-      .movie-sort .a-z-list {
-        left: 368px !important; } }
-  .movie-sort .just-added-list {
-    left: 80px !important; }
-    @media (min-width: 768px) {
-      .movie-sort .just-added-list {
-        left: 95px !important; } }
-    @media (min-width: 1000px) {
-      .movie-sort .just-added-list {
-        left: 133px !important; } }
-    @media (min-width: 1200px) {
-      .movie-sort .just-added-list {
-        left: 168px !important; } }
-    @media (min-width: 1366px) {
-      .movie-sort .just-added-list {
-        left: 192px !important; } }
-  .movie-sort .top-list {
-    left: 35px !important; }
-    @media (min-width: 768px) {
-      .movie-sort .top-list {
-        left: 40px !important; } }
-    @media (min-width: 1000px) {
-      .movie-sort .top-list {
-        left: 52px !important; } }
-    @media (min-width: 1200px) {
-      .movie-sort .top-list {
-        left: 62px !important; } }
-    @media (min-width: 1366px) {
-      .movie-sort .top-list {
-        left: 70px !important; } }
-
 .fa-share {
   transform: rotateY(180deg); }
 
