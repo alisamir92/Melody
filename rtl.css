@@ -72,6 +72,54 @@ Author URI: http://mohamadelbialy.com
     float: left;
     margin-left: 0; } }
 
+.movie-sort .movie-sort-list li {
+  width: 21.7391304348%;
+  float: right; }
+  .movie-sort .movie-sort-list li:nth-child(4n + 1) {
+    margin-right: 0;
+    margin-left: -100%;
+    clear: both;
+    margin-right: 0; }
+  .movie-sort .movie-sort-list li:nth-child(4n + 2) {
+    margin-right: 26.0869565217%;
+    margin-left: -100%;
+    clear: none; }
+  .movie-sort .movie-sort-list li:nth-child(4n + 3) {
+    margin-right: 52.1739130435%;
+    margin-left: -100%;
+    clear: none; }
+  .movie-sort .movie-sort-list li:nth-child(4n + 4) {
+    margin-right: 78.2608695652%;
+    margin-left: -100%;
+    clear: none; }
+
+@media (min-width: 768px) {
+  .hidden-lists > ul {
+    width: 45.4545454545%;
+    float: left;
+    margin-left: 0; } }
+
+.hidden-lists > ul > li {
+  width: 21.7391304348%;
+  float: right; }
+  .hidden-lists > ul > li:nth-child(4n + 1) {
+    margin-right: 0;
+    margin-left: -100%;
+    clear: both;
+    margin-right: 0; }
+  .hidden-lists > ul > li:nth-child(4n + 2) {
+    margin-right: 26.0869565217%;
+    margin-left: -100%;
+    clear: none; }
+  .hidden-lists > ul > li:nth-child(4n + 3) {
+    margin-right: 52.1739130435%;
+    margin-left: -100%;
+    clear: none; }
+  .hidden-lists > ul > li:nth-child(4n + 4) {
+    margin-right: 78.2608695652%;
+    margin-left: -100%;
+    clear: none; }
+
 @media (min-width: 768px) {
   .movies-list li {
     width: 29.4117647059%;
@@ -859,8 +907,7 @@ header {
       font-size: 12px; }
 
 body {
-  position: relative;
-  z-index: 0; }
+  position: relative; }
 
 .movie-sort {
   padding: 20px;
@@ -877,147 +924,43 @@ body {
   .movie-sort h3 {
     font-size: 10px; }
   .movie-sort .movie-sort-list li {
-    width: 21.7391304348%;
-    float: right;
     text-align: center;
     font-size: 10px; }
-    .movie-sort .movie-sort-list li:nth-child(4n + 1) {
-      margin-right: 0;
-      margin-left: -100%;
-      clear: both;
-      margin-right: 0; }
-    .movie-sort .movie-sort-list li:nth-child(4n + 2) {
-      margin-right: 26.0869565217%;
-      margin-left: -100%;
-      clear: none; }
-    .movie-sort .movie-sort-list li:nth-child(4n + 3) {
-      margin-right: 52.1739130435%;
-      margin-left: -100%;
-      clear: none; }
-    .movie-sort .movie-sort-list li:nth-child(4n + 4) {
-      margin-right: 78.2608695652%;
-      margin-left: -100%;
-      clear: none; }
-  .movie-sort .featured-list {
+
+.hidden-lists {
+  padding: 0px 20px;
+  width: 100%;
+  height: 0px;
+  z-index: 1;
+  position: absolute;
+  top: 600px; }
+  @media (min-width: 768px) {
+    .hidden-lists {
+      top: 165px; } }
+  .hidden-lists > ul > li {
+    text-align: center;
+    font-size: 10px; }
+    .hidden-lists > ul > li a {
+      color: #fff; }
+      .hidden-lists > ul > li a:hover {
+        color: #ead80c; }
+  .hidden-lists > ul .featured-list, .hidden-lists > ul .a-z-list, .hidden-lists > ul .just-added-list, .hidden-lists > ul .top-list {
     display: none;
-    z-index: 1;
-    position: absolute;
-    top: 600px;
-    left: 20px;
     font-size: 10px;
     background-color: #323232;
     padding: 5px;
     text-align: center; }
     @media (min-width: 768px) {
-      .movie-sort .featured-list {
-        top: 165px;
-        left: 425px;
+      .hidden-lists > ul .featured-list, .hidden-lists > ul .a-z-list, .hidden-lists > ul .just-added-list, .hidden-lists > ul .top-list {
         font-size: 12px; } }
     @media (min-width: 1000px) {
-      .movie-sort .featured-list {
-        top: 165px;
-        left: 562px;
+      .hidden-lists > ul .featured-list, .hidden-lists > ul .a-z-list, .hidden-lists > ul .just-added-list, .hidden-lists > ul .top-list {
         font-size: 12px; } }
     @media (min-width: 1200px) {
-      .movie-sort .featured-list {
-        top: 165px;
-        left: 680px;
+      .hidden-lists > ul .featured-list, .hidden-lists > ul .a-z-list, .hidden-lists > ul .just-added-list, .hidden-lists > ul .top-list {
         font-size: 12px; } }
     @media (min-width: 1366px) {
-      .movie-sort .featured-list {
-        top: 165px;
-        left: 770px;
-        font-size: 12px; } }
-  .movie-sort .a-z-list {
-    display: none;
-    z-index: 1;
-    position: absolute;
-    top: 600px;
-    left: 105px;
-    font-size: 10px;
-    background-color: #323232;
-    padding: 5px;
-    text-align: center; }
-    @media (min-width: 768px) {
-      .movie-sort .a-z-list {
-        top: 165px;
-        left: 520px;
-        font-size: 12px; } }
-    @media (min-width: 1000px) {
-      .movie-sort .a-z-list {
-        top: 165px;
-        left: 685px;
-        font-size: 12px; } }
-    @media (min-width: 1200px) {
-      .movie-sort .a-z-list {
-        top: 165px;
-        left: 830px;
-        font-size: 12px; } }
-    @media (min-width: 1366px) {
-      .movie-sort .a-z-list {
-        top: 165px;
-        left: 935px;
-        font-size: 12px; } }
-  .movie-sort .just-added-list {
-    display: none;
-    z-index: 1;
-    position: absolute;
-    top: 600px;
-    left: 177px;
-    font-size: 10px;
-    background-color: #323232;
-    padding: 5px;
-    text-align: center; }
-    @media (min-width: 768px) {
-      .movie-sort .just-added-list {
-        top: 165px;
-        left: 590px;
-        font-size: 12px;
-        width: 80px; } }
-    @media (min-width: 1000px) {
-      .movie-sort .just-added-list {
-        top: 165px;
-        left: 780px;
-        font-size: 12px; } }
-    @media (min-width: 1200px) {
-      .movie-sort .just-added-list {
-        top: 165px;
-        left: 950px;
-        font-size: 12px; } }
-    @media (min-width: 1366px) {
-      .movie-sort .just-added-list {
-        top: 165px;
-        left: 1070px;
-        font-size: 12px; } }
-  .movie-sort .top-list {
-    display: none;
-    z-index: 1;
-    position: absolute;
-    top: 600px;
-    left: 253px;
-    font-size: 10px;
-    background-color: #323232;
-    padding: 5px;
-    text-align: center; }
-    @media (min-width: 768px) {
-      .movie-sort .top-list {
-        top: 165px;
-        left: 685px;
-        font-size: 12px; } }
-    @media (min-width: 1000px) {
-      .movie-sort .top-list {
-        top: 165px;
-        left: 915px;
-        font-size: 12px; } }
-    @media (min-width: 1200px) {
-      .movie-sort .top-list {
-        top: 165px;
-        left: 1107px;
-        font-size: 12px; } }
-    @media (min-width: 1366px) {
-      .movie-sort .top-list {
-        top: 165px;
-        left: 1250px;
+      .hidden-lists > ul .featured-list, .hidden-lists > ul .a-z-list, .hidden-lists > ul .just-added-list, .hidden-lists > ul .top-list {
         font-size: 12px; } }
 
 .plus {

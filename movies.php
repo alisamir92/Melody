@@ -46,7 +46,46 @@
             <li class="top"><a href="#">TOP</a></li>
 
         </ul>
-        
+    </div>
+        <div class="hidden-lists">
+            
+                <ul>
+                    <li class="featured-list">
+                        <ul>
+                            <li><a href="#">jhg</a></li>
+                            <li><a href="#">ghj</a></li>
+                            <li><a href="#">ghj ss</a></li>
+                            <li><a href="#">gh wgw</a></li>
+                        </ul>
+                    </li>
+                    <li class="a-z-list">
+                        <ul>
+                            <li><a href="#">jdfgghg</a></li>
+                            <li><a href="#">gggrgj</a></li>
+                            <li><a href="#">ghregj ss</a></li>
+                            <li><a href="#">ggrh wgw</a></li>
+                        </ul>
+                    </li>
+                    <li class="just-added-list">
+                        <ul>
+                            <li><a href="#">jfb hg</a></li>
+                            <li><a href="#">ghvd j</a></li>
+                            <li><a href="#">gdhj ss</a></li>
+                            <li><a href="#">gh fefwgw</a></li>
+                        </ul>
+                    </li>
+                    <li class="top-list">
+                        <ul>
+                            <li><a href="#">jchg</a></li>
+                            <li><a href="#">gbxhj</a></li>
+                            <li><a href="#">gxchj ss</a></li>
+                            <li><a href="#">gxbh wgw</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            
+        </div>
+<!--
         <div class="hidden-lists">
             <div class="featured-list">
             <ul>
@@ -84,8 +123,9 @@
             </ul>
         </div>
         </div>
+-->
         
-    </div>
+    
     
     
         

@@ -1,6 +1,6 @@
 body{
     position: relative;
-    z-index: 0;
+    
 }
 .movie-sort{
     padding: 20px;
@@ -25,145 +25,63 @@ body{
     }
     .movie-sort-list{
         li{
-           
-            @include gallery(1 of 4);
             text-align: center;
             font-size: 10px;
-            
-        }
-        
-        }
-    .featured-list{
-        display: none;
-        z-index: 1;
-        position: absolute;
-        top: 600px;
-        left: 20px;
-        font-size: 10px;
-        background-color: $fifth-fcolor;
-        padding: 5px;
-        text-align: center;
-        @include breakpoint($tablet){
-            top: 165px;
-            left: 425px;
-            font-size: 12px;
-        }
-        @include breakpoint($laptop){
-            top: 165px;
-            left: 562px;
-            font-size: 12px;
-        }
-        @include breakpoint($desktop){
-            top: 165px;
-            left: 680px;
-            font-size: 12px;
-        }
-        @include breakpoint(1366px){
-            top: 165px;
-            left: 770px;
-            font-size: 12px;
         }
     }
+}
     
-    .a-z-list{
-        display: none;
-        z-index: 1;
-        position: absolute;
-        top: 600px;
-        left: 105px;
-        font-size: 10px;
-        background-color: $fifth-fcolor;
-        padding: 5px;
-        text-align: center;
-        @include breakpoint($tablet){
-            top: 165px;
-            left: 520px;
-            font-size: 12px;
+.hidden-lists{
+
+    padding: 0px 20px;
+    width: 100%;
+    height: 0px;
+    z-index: 1;
+    position: absolute;
+
+    top: 600px;
+    @include breakpoint($tablet){
+           top: 165px;
         }
-        @include breakpoint($laptop){
-            top: 165px;
-            left: 685px;
-            font-size: 12px;
+    >ul{
+
+        >li{
+            text-align: center;
+            font-size: 10px;
+            a{
+                color: $primary-fcolor;
+                &:hover{
+                    color: $third-fcolor;
+                }
+            }
         }
-        @include breakpoint($desktop){
-            top: 165px;
-            left: 830px;
-            font-size: 12px;
-        }
-        @include breakpoint(1366px){
-            top: 165px;
-            left: 935px;
-            font-size: 12px;
-        }
-    }
-    
-    .just-added-list{
-        display: none;
-        z-index: 1;
-        position: absolute;
-        top: 600px;
-        left: 177px;
-        font-size: 10px;
-        background-color: $fifth-fcolor;
-        padding: 5px;
-        text-align: center;
-        @include breakpoint($tablet){
-            top: 165px;
-            left: 590px;
-            font-size: 12px;
-            width: 80px;
-        }
-        @include breakpoint($laptop){
-            top: 165px;
-            left: 780px;
-            font-size: 12px;
-        }
-        @include breakpoint($desktop){
-            top: 165px;
-            left: 950px;
-            font-size: 12px;
-        }
-        @include breakpoint(1366px){
-            top: 165px;
-            left: 1070px;
-            font-size: 12px;
+        .featured-list, .a-z-list, .just-added-list, .top-list{
+            display: none;
+            font-size: 10px;
+            background-color: $fifth-fcolor;
+            padding: 5px;
+            text-align: center;
+            @include breakpoint($tablet){
+
+                font-size: 12px;
+            }
+            @include breakpoint($laptop){
+
+                font-size: 12px;
+            }
+            @include breakpoint($desktop){
+
+                font-size: 12px;
+            }
+            @include breakpoint(1366px){
+
+                font-size: 12px;
+            }
         }
     }
-    
-    .top-list{
-        display: none;
-        z-index: 1;
-        position: absolute;
-        top: 600px;
-        left: 253px;
-        font-size: 10px;
-        background-color: $fifth-fcolor;
-        padding: 5px;
-        text-align: center;
-        @include breakpoint($tablet){
-            top: 165px;
-            left: 685px;
-            font-size: 12px;
-        }
-        @include breakpoint($laptop){
-            top: 165px;
-            left: 915px;
-            font-size: 12px;
-        }
-        @include breakpoint($desktop){
-            top: 165px;
-            left: 1107px;
-            font-size: 12px;
-        }
-        @include breakpoint(1366px){
-            top: 165px;
-            left: 1250px;
-            font-size: 12px;
-        }
-        
-    }
-    
-    }
+}
+  
+
     .plus{
         background-color: $sec-fcolor;
         border: none;

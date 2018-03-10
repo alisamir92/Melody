@@ -100,9 +100,9 @@ $(document).ready(function () {
     });
     
     $(".main-hidden-movies-buttons").on("submit", function () {
-        var mainMovieID = $(".owl-main").find("li").attr("id");
+        var mainMovieID = $(".owl-main").find("li").attr("id"),
         
-        var request = $.ajax({
+            request = $.ajax({
             
                 url: "test.php",
                 method: "POST",
@@ -111,11 +111,11 @@ $(document).ready(function () {
             });
 
         request.done(function () {
-            alert("done");
+            window.alert("done");
         });
 
         request.fail(function (jqXHR, textStatus) {
-            alert("Request failed: " + textStatus);
+            window.alert("Request failed: " + textStatus);
         });
     });
 
@@ -131,24 +131,25 @@ $(document).ready(function () {
 
     
     
-    $(".hidden-movies-buttons").on("submit", function () {
-        var movieID = $(".movies-list").find("li").attr("id");
-        
-        var request = $.ajax({
+    $(".movies-list li .hidden-movies-buttons").on("submit", function () {
+        var movieID = $(".movies-list").find("li").attr("id"),
+            
+            request = $.ajax({
             
                 url: "test.php",
                 method: "POST",
                 data: { id : movieID },
                 dataType: "html"
             });
-
+        window.console.log(movieID);
         request.done(function () {
-            alert("done");
+            window.alert("done");
         });
 
         request.fail(function (jqXHR, textStatus) {
-            alert("Request failed: " + textStatus);
+            window.alert("Request failed: " + textStatus);
         });
+        
     });
     //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     
@@ -198,13 +199,14 @@ $(document).ready(function () {
     
     //featured-list@@@@@@@@@@@@@@@@@@@@@@@
     $(".movie-sort-list .featured").on("mouseenter", function () {
-        $(".featured-list").show();
+        $(".hidden-lists .featured-list").show();
         $(".a-z-list, .just-added-list, .top-list").hide();
     });
     
     $(".featured-list").on("mouseleave", function () {
         $(".featured-list").hide();
     });
+    
     
     $(".featured-list ul li").on("click", function (e) {
         e.preventDefault();
@@ -279,13 +281,13 @@ $(document).ready(function () {
     });
     
     
-    $(".movie-sort").on("mouseleave", function () {
+    $("header").on("mouseenter", function () {
         $(".featured-list, .a-z-list, .just-added-list, .top-list").hide();
     });
     //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     
     //login-form validation@@@@@@@@@@@@@@@@@
-    jQuery.validator.setDefaults({
+    window.jQuery.validator.setDefaults({
         debug: true,
         success: "valid"
     });
